@@ -1,0 +1,847 @@
+fileFormatVersion: 2
+guid: b135b481487e6764aa79c1e5b7507d82
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3421893258158462187
+    second: Saut_SpriteSheet_Corps_0
+  - first:
+      213: -4784652457397938366
+    second: Saut_SpriteSheet_Corps_1
+  - first:
+      213: -78263940507618448
+    second: Saut_SpriteSheet_Corps_2
+  - first:
+      213: -9065375298463649264
+    second: Saut_SpriteSheet_Corps_3
+  - first:
+      213: -1345587825077261820
+    second: Saut_SpriteSheet_Corps_4
+  - first:
+      213: -7079703712835068690
+    second: Saut_SpriteSheet_Corps_5
+  - first:
+      213: 2173123527027570930
+    second: Saut_SpriteSheet_Corps_6
+  - first:
+      213: 5749363576460641622
+    second: Saut_SpriteSheet_Corps_7
+  - first:
+      213: 3886519604394457632
+    second: Saut_SpriteSheet_Corps_8
+  - first:
+      213: 5811719832814308016
+    second: Saut_SpriteSheet_Corps_9
+  - first:
+      213: 3444457158973282119
+    second: Saut_SpriteSheet_Corps_10
+  - first:
+      213: -6246220500877016806
+    second: Saut_SpriteSheet_Corps_11
+  - first:
+      213: -666575198141966990
+    second: Saut_SpriteSheet_Corps_12
+  - first:
+      213: 3207413361209715800
+    second: Saut_SpriteSheet_Corps_13
+  - first:
+      213: -7866977862979097522
+    second: Saut_SpriteSheet_Corps_14
+  - first:
+      213: 8220596000305631111
+    second: Saut_SpriteSheet_Corps_15
+  - first:
+      213: 5616425320811302954
+    second: Saut_SpriteSheet_Corps_16
+  - first:
+      213: -1990000680157789150
+    second: Saut_SpriteSheet_Corps_17
+  - first:
+      213: 2242131754476544371
+    second: Saut_SpriteSheet_Corps_18
+  - first:
+      213: -7808343555182984347
+    second: Saut_SpriteSheet_Corps_19
+  - first:
+      213: 5612588919645491658
+    second: Saut_SpriteSheet_Corps_20
+  - first:
+      213: -3191611168980417228
+    second: Saut_SpriteSheet_Corps_21
+  - first:
+      213: 2365040302892867074
+    second: Saut_SpriteSheet_Corps_22
+  - first:
+      213: 2141879313172449454
+    second: Saut_SpriteSheet_Corps_23
+  - first:
+      213: -3481146483852882162
+    second: Saut_SpriteSheet_Corps_24
+  - first:
+      213: -6555215874620560093
+    second: Saut_SpriteSheet_Corps_25
+  - first:
+      213: -1734984117202329188
+    second: Saut_SpriteSheet_Corps_26
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Saut_SpriteSheet_Corps_0
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 91
+        width: 842
+        height: 1308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be4d6dfc9c10d7f20800000000000000
+      internalID: 3421893258158462187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saut_SpriteSheet_Corps_1
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 131
+        width: 842
+        height: 1308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 247981fa0ff799db0800000000000000
+      internalID: -4784652457397938366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saut_SpriteSheet_Corps_2
+      rect:
+        serializedVersion: 2
+        x: 1979
+        y: 181
+        width: 842
+        height: 1308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 073325b5c53f9eef0800000000000000
+      internalID: -78263940507618448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saut_SpriteSheet_Corps_3
+      rect:
+        serializedVersion: 2
+        x: 2919
+        y: 235
+        width: 842
+        height: 1308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 012397b4231513280800000000000000
+      internalID: -9065375298463649264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saut_SpriteSheet_Corps_4
+      rect:
+        serializedVersion: 2
+        x: 3859
+        y: 367
+        width: 811
+        height: 1207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40aed289003835de0800000000000000
+      internalID: -1345587825077261820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saut_SpriteSheet_Corps_5
+      rect:
+        serializedVersion: 2
+        x: 4799
+        y: 296
+        width: 769
+        height: 1308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eec9379abf6dfbd90800000000000000
+      internalID: -7079703712835068690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saut_SpriteSheet_Corps_6
+      rect:
+        serializedVersion: 2
+        x: 5739
+        y: 403
+        width: 748
+        height: 1219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f8b589855c782e10800000000000000
+      internalID: 2173123527027570930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saut_SpriteSheet_Corps_7
+      rect:
+        serializedVersion: 2
+        x: 6679
+        y: 352
+        width: 699
+        height: 1279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 655818b16b7d9cf40800000000000000
+      internalID: 5749363576460641622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saut_SpriteSheet_Corps_8
+      rect:
+        serializedVersion: 2
+        x: 7425
+        y: 737
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02af5801df0bfe530800000000000000
+      internalID: 3886519604394457632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saut_SpriteSheet_Corps_9
+      rect:
+        serializedVersion: 2
+        x: 7619
+        y: 352
+        width: 699
+        height: 1279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ba4df8656067a050800000000000000
+      internalID: 5811719832814308016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saut_SpriteSheet_Corps_10
+      rect:
+        serializedVersion: 2
+        x: 8365
+        y: 737
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74757ac598b2dcf20800000000000000
+      internalID: 3444457158973282119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saut_SpriteSheet_Corps_11
+      rect:
+        serializedVersion: 2
+        x: 8559
+        y: 286
+        width: 842
+        height: 1307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1186706c87f059a0800000000000000
+      internalID: -6246220500877016806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saut_SpriteSheet_Corps_12
+      rect:
+        serializedVersion: 2
+        x: 9499
+        y: 296
+        width: 769
+        height: 1308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27599a29369dfb6f0800000000000000
+      internalID: -666575198141966990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saut_SpriteSheet_Corps_13
+      rect:
+        serializedVersion: 2
+        x: 10439
+        y: 235
+        width: 842
+        height: 1308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85c2fba5575038c20800000000000000
+      internalID: 3207413361209715800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saut_SpriteSheet_Corps_14
+      rect:
+        serializedVersion: 2
+        x: 11379
+        y: 177
+        width: 842
+        height: 1308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4ce44d8051e2d290800000000000000
+      internalID: -7866977862979097522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saut_SpriteSheet_Corps_15
+      rect:
+        serializedVersion: 2
+        x: 12319
+        y: 127
+        width: 842
+        height: 1308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78fc638f18c651270800000000000000
+      internalID: 8220596000305631111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saut_SpriteSheet_Corps_16
+      rect:
+        serializedVersion: 2
+        x: 13259
+        y: 91
+        width: 841
+        height: 1308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a20977a721d81fd40800000000000000
+      internalID: 5616425320811302954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saut_SpriteSheet_Corps_17
+      rect:
+        serializedVersion: 2
+        x: 5584
+        y: 714
+        width: 27
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 224c864cce81264e0800000000000000
+      internalID: -1990000680157789150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saut_SpriteSheet_Corps_18
+      rect:
+        serializedVersion: 2
+        x: 5626
+        y: 729
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 371a23d83f6ad1f10800000000000000
+      internalID: 2242131754476544371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saut_SpriteSheet_Corps_19
+      rect:
+        serializedVersion: 2
+        x: 10284
+        y: 714
+        width: 27
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5638b1d28e033a390800000000000000
+      internalID: -7808343555182984347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saut_SpriteSheet_Corps_20
+      rect:
+        serializedVersion: 2
+        x: 10326
+        y: 729
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac153c9b2ebe3ed40800000000000000
+      internalID: 5612588919645491658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saut_SpriteSheet_Corps_21
+      rect:
+        serializedVersion: 2
+        x: 5571
+        y: 682
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 435c0cb3d8e15b3d0800000000000000
+      internalID: -3191611168980417228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saut_SpriteSheet_Corps_22
+      rect:
+        serializedVersion: 2
+        x: 5591
+        y: 692
+        width: 21
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20e596dff9f42d020800000000000000
+      internalID: 2365040302892867074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saut_SpriteSheet_Corps_23
+      rect:
+        serializedVersion: 2
+        x: 10271
+        y: 682
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea8c66d13eb79bd10800000000000000
+      internalID: 2141879313172449454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saut_SpriteSheet_Corps_24
+      rect:
+        serializedVersion: 2
+        x: 10291
+        y: 692
+        width: 21
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0f49d287bb70bfc0800000000000000
+      internalID: -3481146483852882162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saut_SpriteSheet_Corps_25
+      rect:
+        serializedVersion: 2
+        x: 5560
+        y: 680
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32d6d3f94e13705a0800000000000000
+      internalID: -6555215874620560093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saut_SpriteSheet_Corps_26
+      rect:
+        serializedVersion: 2
+        x: 10260
+        y: 680
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c91e53343291ce7e0800000000000000
+      internalID: -1734984117202329188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Saut_SpriteSheet_Corps_0: 3421893258158462187
+      Saut_SpriteSheet_Corps_1: -4784652457397938366
+      Saut_SpriteSheet_Corps_10: 3444457158973282119
+      Saut_SpriteSheet_Corps_11: -6246220500877016806
+      Saut_SpriteSheet_Corps_12: -666575198141966990
+      Saut_SpriteSheet_Corps_13: 3207413361209715800
+      Saut_SpriteSheet_Corps_14: -7866977862979097522
+      Saut_SpriteSheet_Corps_15: 8220596000305631111
+      Saut_SpriteSheet_Corps_16: 5616425320811302954
+      Saut_SpriteSheet_Corps_17: -1990000680157789150
+      Saut_SpriteSheet_Corps_18: 2242131754476544371
+      Saut_SpriteSheet_Corps_19: -7808343555182984347
+      Saut_SpriteSheet_Corps_2: -78263940507618448
+      Saut_SpriteSheet_Corps_20: 5612588919645491658
+      Saut_SpriteSheet_Corps_21: -3191611168980417228
+      Saut_SpriteSheet_Corps_22: 2365040302892867074
+      Saut_SpriteSheet_Corps_23: 2141879313172449454
+      Saut_SpriteSheet_Corps_24: -3481146483852882162
+      Saut_SpriteSheet_Corps_25: -6555215874620560093
+      Saut_SpriteSheet_Corps_26: -1734984117202329188
+      Saut_SpriteSheet_Corps_3: -9065375298463649264
+      Saut_SpriteSheet_Corps_4: -1345587825077261820
+      Saut_SpriteSheet_Corps_5: -7079703712835068690
+      Saut_SpriteSheet_Corps_6: 2173123527027570930
+      Saut_SpriteSheet_Corps_7: 5749363576460641622
+      Saut_SpriteSheet_Corps_8: 3886519604394457632
+      Saut_SpriteSheet_Corps_9: 5811719832814308016
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

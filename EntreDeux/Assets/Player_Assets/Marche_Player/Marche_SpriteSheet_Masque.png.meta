@@ -1,0 +1,535 @@
+fileFormatVersion: 2
+guid: 184ab72fda9bde24b8b2fa9baa00a3bc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6546674397509062947
+    second: Marche_SpriteSheet_Masque_0
+  - first:
+      213: 7590025246277445880
+    second: Marche_SpriteSheet_Masque_1
+  - first:
+      213: -6984712173544710141
+    second: Marche_SpriteSheet_Masque_2
+  - first:
+      213: 5420445132167272501
+    second: Marche_SpriteSheet_Masque_3
+  - first:
+      213: 704030295024581287
+    second: Marche_SpriteSheet_Masque_4
+  - first:
+      213: 1369469012422458169
+    second: Marche_SpriteSheet_Masque_5
+  - first:
+      213: 6669956492067167153
+    second: Marche_SpriteSheet_Masque_6
+  - first:
+      213: 4332290678970256236
+    second: Marche_SpriteSheet_Masque_7
+  - first:
+      213: 3471545013948223916
+    second: Marche_SpriteSheet_Masque_8
+  - first:
+      213: -6381351919699671102
+    second: Marche_SpriteSheet_Masque_9
+  - first:
+      213: 3750943562756693172
+    second: Marche_SpriteSheet_Masque_10
+  - first:
+      213: 6097002082894893337
+    second: Marche_SpriteSheet_Masque_11
+  - first:
+      213: 1652981331987621481
+    second: Marche_SpriteSheet_Masque_12
+  - first:
+      213: 3296686609883659888
+    second: Marche_SpriteSheet_Masque_13
+  - first:
+      213: -2120142725837112517
+    second: Marche_SpriteSheet_Masque_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Marche_SpriteSheet_Masque_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 672
+        width: 615
+        height: 1140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3211ca3cda57ada50800000000000000
+      internalID: 6546674397509062947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marche_SpriteSheet_Masque_1
+      rect:
+        serializedVersion: 2
+        x: 939
+        y: 686
+        width: 616
+        height: 1140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f82d907fbf255960800000000000000
+      internalID: 7590025246277445880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marche_SpriteSheet_Masque_2
+      rect:
+        serializedVersion: 2
+        x: 1879
+        y: 703
+        width: 616
+        height: 1140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3006585e841511f90800000000000000
+      internalID: -6984712173544710141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marche_SpriteSheet_Masque_3
+      rect:
+        serializedVersion: 2
+        x: 2819
+        y: 731
+        width: 616
+        height: 1140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5385353012a493b40800000000000000
+      internalID: 5420445132167272501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marche_SpriteSheet_Masque_4
+      rect:
+        serializedVersion: 2
+        x: 3759
+        y: 768
+        width: 616
+        height: 1140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7aabd0eb2d735c900800000000000000
+      internalID: 704030295024581287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marche_SpriteSheet_Masque_5
+      rect:
+        serializedVersion: 2
+        x: 4699
+        y: 788
+        width: 616
+        height: 1140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93b7850afc4510310800000000000000
+      internalID: 1369469012422458169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marche_SpriteSheet_Masque_6
+      rect:
+        serializedVersion: 2
+        x: 5639
+        y: 813
+        width: 616
+        height: 1137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bb59f03712709c50800000000000000
+      internalID: 6669956492067167153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marche_SpriteSheet_Masque_7
+      rect:
+        serializedVersion: 2
+        x: 6579
+        y: 830
+        width: 616
+        height: 1120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6b02c74b636f1c30800000000000000
+      internalID: 4332290678970256236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marche_SpriteSheet_Masque_8
+      rect:
+        serializedVersion: 2
+        x: 7519
+        y: 813
+        width: 616
+        height: 1137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca199221cc76d2030800000000000000
+      internalID: 3471545013948223916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marche_SpriteSheet_Masque_9
+      rect:
+        serializedVersion: 2
+        x: 8459
+        y: 788
+        width: 616
+        height: 1140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c74b872d32e077a0800000000000000
+      internalID: -6381351919699671102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marche_SpriteSheet_Masque_10
+      rect:
+        serializedVersion: 2
+        x: 9399
+        y: 768
+        width: 616
+        height: 1140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bc96a60c470e0430800000000000000
+      internalID: 3750943562756693172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marche_SpriteSheet_Masque_11
+      rect:
+        serializedVersion: 2
+        x: 10339
+        y: 731
+        width: 616
+        height: 1140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91154c15717ec9450800000000000000
+      internalID: 6097002082894893337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marche_SpriteSheet_Masque_12
+      rect:
+        serializedVersion: 2
+        x: 11279
+        y: 703
+        width: 616
+        height: 1140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 966697973c190f610800000000000000
+      internalID: 1652981331987621481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marche_SpriteSheet_Masque_13
+      rect:
+        serializedVersion: 2
+        x: 12219
+        y: 686
+        width: 616
+        height: 1140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07ef6ed410f20cd20800000000000000
+      internalID: 3296686609883659888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marche_SpriteSheet_Masque_14
+      rect:
+        serializedVersion: 2
+        x: 13159
+        y: 672
+        width: 616
+        height: 1140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3bb9518c6db392e0800000000000000
+      internalID: -2120142725837112517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Marche_SpriteSheet_Masque_0: 6546674397509062947
+      Marche_SpriteSheet_Masque_1: 7590025246277445880
+      Marche_SpriteSheet_Masque_10: 3750943562756693172
+      Marche_SpriteSheet_Masque_11: 6097002082894893337
+      Marche_SpriteSheet_Masque_12: 1652981331987621481
+      Marche_SpriteSheet_Masque_13: 3296686609883659888
+      Marche_SpriteSheet_Masque_14: -2120142725837112517
+      Marche_SpriteSheet_Masque_2: -6984712173544710141
+      Marche_SpriteSheet_Masque_3: 5420445132167272501
+      Marche_SpriteSheet_Masque_4: 704030295024581287
+      Marche_SpriteSheet_Masque_5: 1369469012422458169
+      Marche_SpriteSheet_Masque_6: 6669956492067167153
+      Marche_SpriteSheet_Masque_7: 4332290678970256236
+      Marche_SpriteSheet_Masque_8: 3471545013948223916
+      Marche_SpriteSheet_Masque_9: -6381351919699671102
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

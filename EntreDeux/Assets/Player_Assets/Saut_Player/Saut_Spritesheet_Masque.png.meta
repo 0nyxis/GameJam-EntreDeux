@@ -1,0 +1,535 @@
+fileFormatVersion: 2
+guid: 766d41ff61496544e93749dfdec16e5a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 987042914892246909
+    second: Saut_Spritesheet_Masque_0
+  - first:
+      213: 7060371908923511835
+    second: Saut_Spritesheet_Masque_1
+  - first:
+      213: 4997722359968353627
+    second: Saut_Spritesheet_Masque_2
+  - first:
+      213: 2498265075139363750
+    second: Saut_Spritesheet_Masque_3
+  - first:
+      213: -7914195573930406147
+    second: Saut_Spritesheet_Masque_4
+  - first:
+      213: 8748429085469424791
+    second: Saut_Spritesheet_Masque_5
+  - first:
+      213: -7999436799973164077
+    second: Saut_Spritesheet_Masque_6
+  - first:
+      213: -6134158837783185901
+    second: Saut_Spritesheet_Masque_7
+  - first:
+      213: 6106570910455163734
+    second: Saut_Spritesheet_Masque_8
+  - first:
+      213: 1339064264146068043
+    second: Saut_Spritesheet_Masque_9
+  - first:
+      213: -1843987729342745982
+    second: Saut_Spritesheet_Masque_10
+  - first:
+      213: -8296108934294744898
+    second: Saut_Spritesheet_Masque_11
+  - first:
+      213: -6672668348167948521
+    second: Saut_Spritesheet_Masque_12
+  - first:
+      213: -8135081572830218090
+    second: Saut_Spritesheet_Masque_13
+  - first:
+      213: 8559382904371507537
+    second: Saut_Spritesheet_Masque_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Saut_Spritesheet_Masque_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 669
+        width: 615
+        height: 1140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7fe7303d4ea2bd00800000000000000
+      internalID: 987042914892246909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saut_Spritesheet_Masque_1
+      rect:
+        serializedVersion: 2
+        x: 939
+        y: 704
+        width: 616
+        height: 1140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b14588df7da7bf160800000000000000
+      internalID: 7060371908923511835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saut_Spritesheet_Masque_2
+      rect:
+        serializedVersion: 2
+        x: 1879
+        y: 747
+        width: 616
+        height: 1140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5dc0ffd10a7b5540800000000000000
+      internalID: 4997722359968353627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saut_Spritesheet_Masque_3
+      rect:
+        serializedVersion: 2
+        x: 2819
+        y: 795
+        width: 616
+        height: 1140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a3427679de9ba220800000000000000
+      internalID: 2498265075139363750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saut_Spritesheet_Masque_4
+      rect:
+        serializedVersion: 2
+        x: 3759
+        y: 832
+        width: 616
+        height: 1140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfec8e48e012b2290800000000000000
+      internalID: -7914195573930406147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saut_Spritesheet_Masque_5
+      rect:
+        serializedVersion: 2
+        x: 4699
+        y: 868
+        width: 616
+        height: 1132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79cb91ee6e9a86970800000000000000
+      internalID: 8748429085469424791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saut_Spritesheet_Masque_6
+      rect:
+        serializedVersion: 2
+        x: 5639
+        y: 905
+        width: 616
+        height: 1095
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3db796efc9a4cf090800000000000000
+      internalID: -7999436799973164077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saut_Spritesheet_Masque_7
+      rect:
+        serializedVersion: 2
+        x: 6579
+        y: 913
+        width: 616
+        height: 1087
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3163c1689071fdaa0800000000000000
+      internalID: -6134158837783185901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saut_Spritesheet_Masque_8
+      rect:
+        serializedVersion: 2
+        x: 7519
+        y: 913
+        width: 616
+        height: 1087
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65be96993e5eeb450800000000000000
+      internalID: 6106570910455163734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saut_Spritesheet_Masque_9
+      rect:
+        serializedVersion: 2
+        x: 8459
+        y: 905
+        width: 616
+        height: 1095
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b42a8d38adf459210800000000000000
+      internalID: 1339064264146068043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saut_Spritesheet_Masque_10
+      rect:
+        serializedVersion: 2
+        x: 9399
+        y: 832
+        width: 616
+        height: 1140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 282b8561ee6d866e0800000000000000
+      internalID: -1843987729342745982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saut_Spritesheet_Masque_11
+      rect:
+        serializedVersion: 2
+        x: 10339
+        y: 795
+        width: 616
+        height: 1140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb0da6101ec4edc80800000000000000
+      internalID: -8296108934294744898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saut_Spritesheet_Masque_12
+      rect:
+        serializedVersion: 2
+        x: 11279
+        y: 747
+        width: 616
+        height: 1140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 717f47b9d7be563a0800000000000000
+      internalID: -6672668348167948521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saut_Spritesheet_Masque_13
+      rect:
+        serializedVersion: 2
+        x: 12219
+        y: 704
+        width: 616
+        height: 1140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 698f0a839626a1f80800000000000000
+      internalID: -8135081572830218090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saut_Spritesheet_Masque_14
+      rect:
+        serializedVersion: 2
+        x: 13159
+        y: 669
+        width: 616
+        height: 1140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1517d97e66909c670800000000000000
+      internalID: 8559382904371507537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Saut_Spritesheet_Masque_0: 987042914892246909
+      Saut_Spritesheet_Masque_1: 7060371908923511835
+      Saut_Spritesheet_Masque_10: -1843987729342745982
+      Saut_Spritesheet_Masque_11: -8296108934294744898
+      Saut_Spritesheet_Masque_12: -6672668348167948521
+      Saut_Spritesheet_Masque_13: -8135081572830218090
+      Saut_Spritesheet_Masque_14: 8559382904371507537
+      Saut_Spritesheet_Masque_2: 4997722359968353627
+      Saut_Spritesheet_Masque_3: 2498265075139363750
+      Saut_Spritesheet_Masque_4: -7914195573930406147
+      Saut_Spritesheet_Masque_5: 8748429085469424791
+      Saut_Spritesheet_Masque_6: -7999436799973164077
+      Saut_Spritesheet_Masque_7: -6134158837783185901
+      Saut_Spritesheet_Masque_8: 6106570910455163734
+      Saut_Spritesheet_Masque_9: 1339064264146068043
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
