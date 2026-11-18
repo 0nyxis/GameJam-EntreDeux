@@ -1,0 +1,1159 @@
+fileFormatVersion: 2
+guid: 1055048c53594ba408c429a6fb051303
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6717699007492907744
+    second: Ames_Spritesheet_Second_Plan_0
+  - first:
+      213: 3319926089208482798
+    second: Ames_Spritesheet_Second_Plan_1
+  - first:
+      213: -2180003669436293598
+    second: Ames_Spritesheet_Second_Plan_2
+  - first:
+      213: 1450715413676313729
+    second: Ames_Spritesheet_Second_Plan_3
+  - first:
+      213: 6560743913770651568
+    second: Ames_Spritesheet_Second_Plan_4
+  - first:
+      213: -1309498426124565671
+    second: Ames_Spritesheet_Second_Plan_5
+  - first:
+      213: 4601079931490285254
+    second: Ames_Spritesheet_Second_Plan_6
+  - first:
+      213: 1913469683722783999
+    second: Ames_Spritesheet_Second_Plan_7
+  - first:
+      213: -3137511351045283168
+    second: Ames_Spritesheet_Second_Plan_8
+  - first:
+      213: -2496735232115924271
+    second: Ames_Spritesheet_Second_Plan_9
+  - first:
+      213: 718297206999627699
+    second: Ames_Spritesheet_Second_Plan_10
+  - first:
+      213: 8965793724458720640
+    second: Ames_Spritesheet_Second_Plan_11
+  - first:
+      213: -8095877961143771771
+    second: Ames_Spritesheet_Second_Plan_12
+  - first:
+      213: 2847199149830079016
+    second: Ames_Spritesheet_Second_Plan_13
+  - first:
+      213: 5066382482574486683
+    second: Ames_Spritesheet_Second_Plan_14
+  - first:
+      213: 144690991586729604
+    second: Ames_Spritesheet_Second_Plan_15
+  - first:
+      213: 3024963651406145482
+    second: Ames_Spritesheet_Second_Plan_16
+  - first:
+      213: 5916220839789757180
+    second: Ames_Spritesheet_Second_Plan_17
+  - first:
+      213: 8502551476239268419
+    second: Ames_Spritesheet_Second_Plan_18
+  - first:
+      213: 9166273630005440563
+    second: Ames_Spritesheet_Second_Plan_19
+  - first:
+      213: 6638082882725731336
+    second: Ames_Spritesheet_Second_Plan_20
+  - first:
+      213: -3316792335150704958
+    second: Ames_Spritesheet_Second_Plan_21
+  - first:
+      213: -1888711918566975572
+    second: Ames_Spritesheet_Second_Plan_22
+  - first:
+      213: -5040175926918068543
+    second: Ames_Spritesheet_Second_Plan_23
+  - first:
+      213: 8169759179545977484
+    second: Ames_Spritesheet_Second_Plan_24
+  - first:
+      213: -1399317850431715161
+    second: Ames_Spritesheet_Second_Plan_25
+  - first:
+      213: -755652726133856402
+    second: Ames_Spritesheet_Second_Plan_26
+  - first:
+      213: 8755825945692559078
+    second: Ames_Spritesheet_Second_Plan_27
+  - first:
+      213: 1501311705899034313
+    second: Ames_Spritesheet_Second_Plan_28
+  - first:
+      213: 4426028075154475588
+    second: Ames_Spritesheet_Second_Plan_29
+  - first:
+      213: 7321981912578780285
+    second: Ames_Spritesheet_Second_Plan_30
+  - first:
+      213: -8220021228493383367
+    second: Ames_Spritesheet_Second_Plan_31
+  - first:
+      213: -1686560301196983429
+    second: Ames_Spritesheet_Second_Plan_32
+  - first:
+      213: -5991745773167455579
+    second: Ames_Spritesheet_Second_Plan_33
+  - first:
+      213: 6096379797021353480
+    second: Ames_Spritesheet_Second_Plan_34
+  - first:
+      213: -9025318761444749515
+    second: Ames_Spritesheet_Second_Plan_35
+  - first:
+      213: 200998424792802277
+    second: Ames_Spritesheet_Second_Plan_36
+  - first:
+      213: 7883867982189336580
+    second: Ames_Spritesheet_Second_Plan_37
+  - first:
+      213: -3502936883438305769
+    second: Ames_Spritesheet_Second_Plan_38
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Ames_Spritesheet_Second_Plan_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 3
+        width: 10
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02d14663850f5c2a0800000000000000
+      internalID: -6717699007492907744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ames_Spritesheet_Second_Plan_1
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 3
+        width: 10
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eebc2db303fb21e20800000000000000
+      internalID: 3319926089208482798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ames_Spritesheet_Second_Plan_2
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 3
+        width: 10
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22e933a76321fb1e0800000000000000
+      internalID: -2180003669436293598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ames_Spritesheet_Second_Plan_3
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 3
+        width: 11
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18c4c568bf9f12410800000000000000
+      internalID: 1450715413676313729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ames_Spritesheet_Second_Plan_4
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 3
+        width: 11
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bf0b9a44d17c0b50800000000000000
+      internalID: 6560743913770651568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ames_Spritesheet_Second_Plan_5
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 3
+        width: 11
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95389e49e1ab3dde0800000000000000
+      internalID: -1309498426124565671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ames_Spritesheet_Second_Plan_6
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 3
+        width: 11
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c638a3f1d15adf30800000000000000
+      internalID: 4601079931490285254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ames_Spritesheet_Second_Plan_7
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 3
+        width: 11
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffc86c21a820e8a10800000000000000
+      internalID: 1913469683722783999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ames_Spritesheet_Second_Plan_8
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 3
+        width: 11
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a2a03aac025574d0800000000000000
+      internalID: -3137511351045283168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ames_Spritesheet_Second_Plan_9
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 5
+        width: 10
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d2278fd880d95dd0800000000000000
+      internalID: -2496735232115924271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ames_Spritesheet_Second_Plan_10
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 5
+        width: 10
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b73e5a0187e7f900800000000000000
+      internalID: 718297206999627699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ames_Spritesheet_Second_Plan_11
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 5
+        width: 10
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08dd9cbb3e5ec6c70800000000000000
+      internalID: 8965793724458720640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ames_Spritesheet_Second_Plan_12
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 4
+        width: 11
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58d9c1d53e9a5af80800000000000000
+      internalID: -8095877961143771771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ames_Spritesheet_Second_Plan_13
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 4
+        width: 11
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8228a6aaa88438720800000000000000
+      internalID: 2847199149830079016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ames_Spritesheet_Second_Plan_14
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 4
+        width: 11
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9c2d1a66086f4640800000000000000
+      internalID: 5066382482574486683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ames_Spritesheet_Second_Plan_15
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 5
+        width: 11
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48ed9b3b0bb020200800000000000000
+      internalID: 144690991586729604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ames_Spritesheet_Second_Plan_16
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 5
+        width: 11
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac7288cf964daf920800000000000000
+      internalID: 3024963651406145482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ames_Spritesheet_Second_Plan_17
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 5
+        width: 11
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf28e602283aa1250800000000000000
+      internalID: 5916220839789757180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ames_Spritesheet_Second_Plan_18
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 4
+        width: 11
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34af6b9e4812ff570800000000000000
+      internalID: 8502551476239268419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ames_Spritesheet_Second_Plan_19
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 4
+        width: 11
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 330318e2d45253f70800000000000000
+      internalID: 9166273630005440563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ames_Spritesheet_Second_Plan_20
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 4
+        width: 11
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80cd77636353f1c50800000000000000
+      internalID: 6638082882725731336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ames_Spritesheet_Second_Plan_21
+      rect:
+        serializedVersion: 2
+        x: 974
+        y: 4
+        width: 11
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c69a9db1f268f1d0800000000000000
+      internalID: -3316792335150704958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ames_Spritesheet_Second_Plan_22
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 4
+        width: 11
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca7d4c25482f9c5e0800000000000000
+      internalID: -1888711918566975572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ames_Spritesheet_Second_Plan_23
+      rect:
+        serializedVersion: 2
+        x: 1054
+        y: 4
+        width: 11
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c6c29ec2b2bd0ab0800000000000000
+      internalID: -5040175926918068543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ames_Spritesheet_Second_Plan_24
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 5
+        width: 10
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c82235540b0d06170800000000000000
+      internalID: 8169759179545977484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ames_Spritesheet_Second_Plan_25
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 5
+        width: 10
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a8872534df949ce0800000000000000
+      internalID: -1399317850431715161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ames_Spritesheet_Second_Plan_26
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 5
+        width: 10
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e676c3569d16385f0800000000000000
+      internalID: -755652726133856402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ames_Spritesheet_Second_Plan_27
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 25
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e65728ae41f28970800000000000000
+      internalID: 8755825945692559078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ames_Spritesheet_Second_Plan_28
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 5
+        width: 10
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c66f3fca0bb5d410800000000000000
+      internalID: 1501311705899034313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ames_Spritesheet_Second_Plan_29
+      rect:
+        serializedVersion: 2
+        x: 1255
+        y: 25
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44a0d7195196c6d30800000000000000
+      internalID: 4426028075154475588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ames_Spritesheet_Second_Plan_30
+      rect:
+        serializedVersion: 2
+        x: 1255
+        y: 5
+        width: 10
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7ce71781c7ec9560800000000000000
+      internalID: 7321981912578780285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ames_Spritesheet_Second_Plan_31
+      rect:
+        serializedVersion: 2
+        x: 1295
+        y: 25
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9395b758e3e9ced80800000000000000
+      internalID: -8220021228493383367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ames_Spritesheet_Second_Plan_32
+      rect:
+        serializedVersion: 2
+        x: 1295
+        y: 5
+        width: 10
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b73c0e287522898e0800000000000000
+      internalID: -1686560301196983429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ames_Spritesheet_Second_Plan_33
+      rect:
+        serializedVersion: 2
+        x: 1335
+        y: 5
+        width: 11
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a2d7e507fa09dca0800000000000000
+      internalID: -5991745773167455579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ames_Spritesheet_Second_Plan_34
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 5
+        width: 11
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80663591021ba9450800000000000000
+      internalID: 6096379797021353480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ames_Spritesheet_Second_Plan_35
+      rect:
+        serializedVersion: 2
+        x: 1415
+        y: 5
+        width: 11
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53fca679760afb280800000000000000
+      internalID: -9025318761444749515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ames_Spritesheet_Second_Plan_36
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 4
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e3203e90071ac200800000000000000
+      internalID: 200998424792802277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ames_Spritesheet_Second_Plan_37
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 4
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4089876c820296d60800000000000000
+      internalID: 7883867982189336580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ames_Spritesheet_Second_Plan_38
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 4
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71ebb00c671136fc0800000000000000
+      internalID: -3502936883438305769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Ames_Spritesheet_Second_Plan_0: -6717699007492907744
+      Ames_Spritesheet_Second_Plan_1: 3319926089208482798
+      Ames_Spritesheet_Second_Plan_10: 718297206999627699
+      Ames_Spritesheet_Second_Plan_11: 8965793724458720640
+      Ames_Spritesheet_Second_Plan_12: -8095877961143771771
+      Ames_Spritesheet_Second_Plan_13: 2847199149830079016
+      Ames_Spritesheet_Second_Plan_14: 5066382482574486683
+      Ames_Spritesheet_Second_Plan_15: 144690991586729604
+      Ames_Spritesheet_Second_Plan_16: 3024963651406145482
+      Ames_Spritesheet_Second_Plan_17: 5916220839789757180
+      Ames_Spritesheet_Second_Plan_18: 8502551476239268419
+      Ames_Spritesheet_Second_Plan_19: 9166273630005440563
+      Ames_Spritesheet_Second_Plan_2: -2180003669436293598
+      Ames_Spritesheet_Second_Plan_20: 6638082882725731336
+      Ames_Spritesheet_Second_Plan_21: -3316792335150704958
+      Ames_Spritesheet_Second_Plan_22: -1888711918566975572
+      Ames_Spritesheet_Second_Plan_23: -5040175926918068543
+      Ames_Spritesheet_Second_Plan_24: 8169759179545977484
+      Ames_Spritesheet_Second_Plan_25: -1399317850431715161
+      Ames_Spritesheet_Second_Plan_26: -755652726133856402
+      Ames_Spritesheet_Second_Plan_27: 8755825945692559078
+      Ames_Spritesheet_Second_Plan_28: 1501311705899034313
+      Ames_Spritesheet_Second_Plan_29: 4426028075154475588
+      Ames_Spritesheet_Second_Plan_3: 1450715413676313729
+      Ames_Spritesheet_Second_Plan_30: 7321981912578780285
+      Ames_Spritesheet_Second_Plan_31: -8220021228493383367
+      Ames_Spritesheet_Second_Plan_32: -1686560301196983429
+      Ames_Spritesheet_Second_Plan_33: -5991745773167455579
+      Ames_Spritesheet_Second_Plan_34: 6096379797021353480
+      Ames_Spritesheet_Second_Plan_35: -9025318761444749515
+      Ames_Spritesheet_Second_Plan_36: 200998424792802277
+      Ames_Spritesheet_Second_Plan_37: 7883867982189336580
+      Ames_Spritesheet_Second_Plan_38: -3502936883438305769
+      Ames_Spritesheet_Second_Plan_4: 6560743913770651568
+      Ames_Spritesheet_Second_Plan_5: -1309498426124565671
+      Ames_Spritesheet_Second_Plan_6: 4601079931490285254
+      Ames_Spritesheet_Second_Plan_7: 1913469683722783999
+      Ames_Spritesheet_Second_Plan_8: -3137511351045283168
+      Ames_Spritesheet_Second_Plan_9: -2496735232115924271
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
