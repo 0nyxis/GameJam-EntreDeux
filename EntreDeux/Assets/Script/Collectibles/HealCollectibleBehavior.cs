@@ -29,7 +29,7 @@ public class HealCollectibleBehavior : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //Debug.Log("Trigger");
-        if (collision.gameObject.name.Contains("Player"))
+        if (collision.gameObject.name.Contains("Character"))
         {
             //getComponent that handles the hp of the player and increase them
             ///uncomment this and either make a fct to heal the player or adjust the hp directly

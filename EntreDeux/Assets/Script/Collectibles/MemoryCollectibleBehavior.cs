@@ -47,7 +47,7 @@ public class MemoryCollectibleBehavior : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //Debug.Log("Trigger");
-        if (collision.gameObject.name.Contains("Player") && playerRef == null)
+        if (collision.gameObject.name.Contains("Character") && playerRef == null)
         {
             //Add it to the list the player has (component or inScript) so it can be affected by the follow player script 
             ///uncomment this (will need a memoryCollectibleList in the player)
