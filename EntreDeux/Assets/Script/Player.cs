@@ -4,14 +4,16 @@ using UnityEngine.InputSystem;
 
 public class Player : MonoBehaviour
 {
-    // Movement Data (left/right)
+    [Header("Movement Data (left/right)")]
     [SerializeField] float maxSpeed = 8f;
     [SerializeField] float acceleration = 10f;
     [SerializeField] float deceleration = 10f;
 
     private float moveInput;
 
-    // Ground Detection Data
+    bool WasLastMoveRight = false;
+
+    [Header("Ground Detection Data")]
     [SerializeField] private Transform groundCheckA;
     [SerializeField] private Transform groundCheckB;
 
@@ -19,8 +21,7 @@ public class Player : MonoBehaviour
     [SerializeField] private LayerMask groundLayer;
     private bool isGrounded;
 
-
-    // Jump Data
+    [Header("Jump Data")]
     [SerializeField] float jumpForce = 12f;
     [SerializeField] float jumpHoldForce = 20f;
     [SerializeField] float maxJumpHoldTime = 0.25f;
@@ -29,8 +30,12 @@ public class Player : MonoBehaviour
     private bool isJumping;
     private bool jumpQueued;
     private bool jumpReleased;
-
     private float jumpHoldCounter;
+
+    [Header("Animation Data")]
+    [SerializeField] SpriteRenderer body;
+    [SerializeField] SpriteRenderer mask;
+    Animator animator;
 
     // Inputs Data
     InputAction ia_Move;
@@ -42,15 +47,22 @@ public class Player : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
 
         ia_Move = InputSystem.actions.FindAction("Move");
         ia_Jump = InputSystem.actions.FindAction("Jump");
+
     }
 
     // Update is called once per frame
     void Update()
     {
         moveInput = ia_Move.ReadValue<Vector2>().x;
+    
+        WasLastMoveRight = moveInput > 0 ? true : (moveInput < 0 ? false : WasLastMoveRight);
+
+        body.flipX = WasLastMoveRight;
+        mask.flipX = WasLastMoveRight;
 
         if (ia_Jump.WasPressedThisFrame())
             jumpQueued = true;
@@ -64,6 +76,14 @@ public class Player : MonoBehaviour
         HandleMovement();
         HandleJump();
         HandleGravity();
+
+        //Updating the animation based on the changed values
+
+        animator.SetFloat("Speed", Mathf.Abs(rb.linearVelocity.x));
+        animator.SetBool("IsGrounded", isGrounded);
+        animator.SetFloat("VerticalVelocity", rb.linearVelocity.y);
+
+        //Debug.Log($"Input: {moveInput:F1} | " + $"Grounded {isGrounded} | " + $"Velocity X: {rb.linearVelocity.x:F2} | " + $"Velocity Y: {rb.linearVelocity.y}");
     }
 
     private void HandleMovement()

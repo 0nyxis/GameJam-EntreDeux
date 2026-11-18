@@ -173,12 +173,12 @@ TextureImporter:
       name: Marche_SpriteSheet_Corps_0
       rect:
         serializedVersion: 2
-        x: 99
-        y: 94
-        width: 842
-        height: 1308
+        x: 0
+        y: 0
+        width: 940
+        height: 1950
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -195,12 +195,12 @@ TextureImporter:
       name: Marche_SpriteSheet_Corps_1
       rect:
         serializedVersion: 2
-        x: 1039
-        y: 92
-        width: 838
-        height: 1330
+        x: 940
+        y: 0
+        width: 940
+        height: 1950
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -217,12 +217,12 @@ TextureImporter:
       name: Marche_SpriteSheet_Corps_2
       rect:
         serializedVersion: 2
-        x: 1979
-        y: 141
-        width: 835
-        height: 1306
+        x: 1880
+        y: 0
+        width: 940
+        height: 1950
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -239,12 +239,12 @@ TextureImporter:
       name: Marche_SpriteSheet_Corps_3
       rect:
         serializedVersion: 2
-        x: 2919
-        y: 235
-        width: 837
-        height: 1232
+        x: 2820
+        y: 0
+        width: 940
+        height: 1950
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -261,12 +261,12 @@ TextureImporter:
       name: Marche_SpriteSheet_Corps_4
       rect:
         serializedVersion: 2
-        x: 3859
-        y: 251
-        width: 807
-        height: 1241
+        x: 3760
+        y: 0
+        width: 940
+        height: 1950
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -283,12 +283,12 @@ TextureImporter:
       name: Marche_SpriteSheet_Corps_5
       rect:
         serializedVersion: 2
-        x: 4799
-        y: 213
-        width: 820
-        height: 1299
+        x: 4700
+        y: 0
+        width: 940
+        height: 1950
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -305,12 +305,12 @@ TextureImporter:
       name: Marche_SpriteSheet_Corps_6
       rect:
         serializedVersion: 2
-        x: 5739
-        y: 204
-        width: 836
-        height: 1333
+        x: 5640
+        y: 0
+        width: 940
+        height: 1950
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -327,12 +327,12 @@ TextureImporter:
       name: Marche_SpriteSheet_Corps_7
       rect:
         serializedVersion: 2
-        x: 6679
-        y: 209
-        width: 836
-        height: 1328
+        x: 6580
+        y: 0
+        width: 940
+        height: 1950
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -349,12 +349,12 @@ TextureImporter:
       name: Marche_SpriteSheet_Corps_8
       rect:
         serializedVersion: 2
-        x: 7619
-        y: 204
-        width: 836
-        height: 1333
+        x: 7520
+        y: 0
+        width: 940
+        height: 1950
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -371,12 +371,12 @@ TextureImporter:
       name: Marche_SpriteSheet_Corps_9
       rect:
         serializedVersion: 2
-        x: 8559
-        y: 196
-        width: 820
-        height: 1316
+        x: 8460
+        y: 0
+        width: 940
+        height: 1950
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -393,12 +393,12 @@ TextureImporter:
       name: Marche_SpriteSheet_Corps_10
       rect:
         serializedVersion: 2
-        x: 9499
-        y: 163
-        width: 807
-        height: 1329
+        x: 9400
+        y: 0
+        width: 940
+        height: 1950
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -415,12 +415,12 @@ TextureImporter:
       name: Marche_SpriteSheet_Corps_11
       rect:
         serializedVersion: 2
-        x: 10439
-        y: 190
-        width: 837
-        height: 1277
+        x: 10340
+        y: 0
+        width: 940
+        height: 1950
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -437,12 +437,12 @@ TextureImporter:
       name: Marche_SpriteSheet_Corps_12
       rect:
         serializedVersion: 2
-        x: 11379
-        y: 157
-        width: 835
-        height: 1290
+        x: 11280
+        y: 0
+        width: 940
+        height: 1950
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -459,12 +459,12 @@ TextureImporter:
       name: Marche_SpriteSheet_Corps_13
       rect:
         serializedVersion: 2
-        x: 12319
-        y: 106
-        width: 838
-        height: 1316
+        x: 12220
+        y: 0
+        width: 940
+        height: 1950
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -481,12 +481,12 @@ TextureImporter:
       name: Marche_SpriteSheet_Corps_14
       rect:
         serializedVersion: 2
-        x: 13259
-        y: 94
-        width: 841
-        height: 1308
+        x: 13160
+        y: 0
+        width: 940
+        height: 1950
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -503,7 +503,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 7956b1f588a82354da7cb816af2effa2
     internalID: 0
     vertices: []
     indices: 
@@ -511,7 +511,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":15.0,"y":1.0},"gridSpriteSize":{"x":940.0,"y":1950.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Marche_SpriteSheet_Corps_0: 2433350324579189956
       Marche_SpriteSheet_Corps_1: 938620137816946653

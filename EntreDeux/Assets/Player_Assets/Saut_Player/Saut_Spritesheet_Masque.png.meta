@@ -174,11 +174,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 669
-        width: 615
-        height: 1140
+        y: 0
+        width: 940
+        height: 2000
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -195,12 +195,12 @@ TextureImporter:
       name: Saut_Spritesheet_Masque_1
       rect:
         serializedVersion: 2
-        x: 939
-        y: 704
-        width: 616
-        height: 1140
+        x: 940
+        y: 0
+        width: 940
+        height: 2000
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -217,12 +217,12 @@ TextureImporter:
       name: Saut_Spritesheet_Masque_2
       rect:
         serializedVersion: 2
-        x: 1879
-        y: 747
-        width: 616
-        height: 1140
+        x: 1880
+        y: 0
+        width: 940
+        height: 2000
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -239,12 +239,12 @@ TextureImporter:
       name: Saut_Spritesheet_Masque_3
       rect:
         serializedVersion: 2
-        x: 2819
-        y: 795
-        width: 616
-        height: 1140
+        x: 2820
+        y: 0
+        width: 940
+        height: 2000
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -261,12 +261,12 @@ TextureImporter:
       name: Saut_Spritesheet_Masque_4
       rect:
         serializedVersion: 2
-        x: 3759
-        y: 832
-        width: 616
-        height: 1140
+        x: 3760
+        y: 0
+        width: 940
+        height: 2000
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -283,12 +283,12 @@ TextureImporter:
       name: Saut_Spritesheet_Masque_5
       rect:
         serializedVersion: 2
-        x: 4699
-        y: 868
-        width: 616
-        height: 1132
+        x: 4700
+        y: 0
+        width: 940
+        height: 2000
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -305,12 +305,12 @@ TextureImporter:
       name: Saut_Spritesheet_Masque_6
       rect:
         serializedVersion: 2
-        x: 5639
-        y: 905
-        width: 616
-        height: 1095
+        x: 5640
+        y: 0
+        width: 940
+        height: 2000
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -327,12 +327,12 @@ TextureImporter:
       name: Saut_Spritesheet_Masque_7
       rect:
         serializedVersion: 2
-        x: 6579
-        y: 913
-        width: 616
-        height: 1087
+        x: 6580
+        y: 0
+        width: 940
+        height: 2000
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -349,12 +349,12 @@ TextureImporter:
       name: Saut_Spritesheet_Masque_8
       rect:
         serializedVersion: 2
-        x: 7519
-        y: 913
-        width: 616
-        height: 1087
+        x: 7520
+        y: 0
+        width: 940
+        height: 2000
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -371,12 +371,12 @@ TextureImporter:
       name: Saut_Spritesheet_Masque_9
       rect:
         serializedVersion: 2
-        x: 8459
-        y: 905
-        width: 616
-        height: 1095
+        x: 8460
+        y: 0
+        width: 940
+        height: 2000
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -393,12 +393,12 @@ TextureImporter:
       name: Saut_Spritesheet_Masque_10
       rect:
         serializedVersion: 2
-        x: 9399
-        y: 832
-        width: 616
-        height: 1140
+        x: 9400
+        y: 0
+        width: 940
+        height: 2000
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -415,12 +415,12 @@ TextureImporter:
       name: Saut_Spritesheet_Masque_11
       rect:
         serializedVersion: 2
-        x: 10339
-        y: 795
-        width: 616
-        height: 1140
+        x: 10340
+        y: 0
+        width: 940
+        height: 2000
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -437,12 +437,12 @@ TextureImporter:
       name: Saut_Spritesheet_Masque_12
       rect:
         serializedVersion: 2
-        x: 11279
-        y: 747
-        width: 616
-        height: 1140
+        x: 11280
+        y: 0
+        width: 940
+        height: 2000
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -459,12 +459,12 @@ TextureImporter:
       name: Saut_Spritesheet_Masque_13
       rect:
         serializedVersion: 2
-        x: 12219
-        y: 704
-        width: 616
-        height: 1140
+        x: 12220
+        y: 0
+        width: 940
+        height: 2000
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -481,12 +481,12 @@ TextureImporter:
       name: Saut_Spritesheet_Masque_14
       rect:
         serializedVersion: 2
-        x: 13159
-        y: 669
-        width: 616
-        height: 1140
+        x: 13160
+        y: 0
+        width: 940
+        height: 2000
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -503,7 +503,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 70fd22e3566c03446bff9ecc7414edd7
     internalID: 0
     vertices: []
     indices: 
@@ -511,7 +511,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":15.0,"y":1.0},"gridSpriteSize":{"x":940.0,"y":2000.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Saut_Spritesheet_Masque_0: 987042914892246909
       Saut_Spritesheet_Masque_1: 7060371908923511835
