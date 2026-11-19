@@ -26,6 +26,8 @@ public class Player : MonoBehaviour
     [SerializeField] float jumpHoldForce = 20f;
     [SerializeField] float maxJumpHoldTime = 0.25f;
     [SerializeField] float gravityScale = 3.0f;
+    [SerializeField] float jumpBufferTime = 0.15f;
+    private float jumpBufferCounter;
     [SerializeField] float coyoteTime = 0.15f;
 
     private float coyoteTimeCounter = 0.0f;
@@ -69,7 +71,7 @@ public class Player : MonoBehaviour
         mask.flipX = WasLastMoveRight;
 
         if (ia_Jump.WasPressedThisFrame())
-            jumpQueued = true;
+            jumpBufferCounter = jumpBufferTime;
         if (ia_Jump.WasReleasedThisFrame())
             jumpReleased = true;
     }
@@ -84,6 +86,9 @@ public class Player : MonoBehaviour
         }
         else
             coyoteTimeCounter -= Time.fixedDeltaTime;
+
+        if (jumpBufferCounter > 0)
+            jumpBufferCounter -= Time.fixedDeltaTime;
 
         HandleMovement();
         HandleJump();
@@ -110,12 +115,14 @@ public class Player : MonoBehaviour
     private void HandleJump()
     {
         //Can jump
-        if(jumpQueued && coyoteTimeCounter > 0)
+        if(jumpBufferCounter > 0 && coyoteTimeCounter > 0)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
 
             isJumping = true;
             jumpHoldCounter = maxJumpHoldTime;
+
+            jumpBufferCounter = 0;
         }
 
         jumpQueued = false;
