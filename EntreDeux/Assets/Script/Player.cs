@@ -26,6 +26,10 @@ public class Player : MonoBehaviour
     [SerializeField] float jumpHoldForce = 20f;
     [SerializeField] float maxJumpHoldTime = 0.25f;
     [SerializeField] float gravityScale = 3.0f;
+    [SerializeField] float coyoteTime = 0.15f;
+
+    private float coyoteTimeCounter = 0.0f;
+
 
     private bool isJumping;
     private bool jumpQueued;
@@ -73,6 +77,14 @@ public class Player : MonoBehaviour
     void FixedUpdate()
     {
         isGrounded = IsOnGround();
+
+        if (isGrounded)
+        {
+            coyoteTimeCounter = coyoteTime;
+        }
+        else
+            coyoteTimeCounter -= Time.fixedDeltaTime;
+
         HandleMovement();
         HandleJump();
         HandleGravity();
@@ -98,7 +110,7 @@ public class Player : MonoBehaviour
     private void HandleJump()
     {
         //Can jump
-        if(jumpQueued && isGrounded)
+        if(jumpQueued && coyoteTimeCounter > 0)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
 
@@ -118,10 +130,11 @@ public class Player : MonoBehaviour
                 isJumping = false;
             }
             jumpReleased = false;
+            coyoteTimeCounter = 0;
         }
 
         // The player continue its ascension while he can, by holding the jump button
-        if(isJumping && ia_Jump.IsPressed() && jumpHoldCounter > 0)
+        if (isJumping && ia_Jump.IsPressed() && jumpHoldCounter > 0)
         {
             rb.AddForce(Vector2.up * jumpHoldForce, ForceMode2D.Force);
 
