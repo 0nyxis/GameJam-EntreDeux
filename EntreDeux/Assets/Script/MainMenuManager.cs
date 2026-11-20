@@ -3,8 +3,14 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuManager : MonoBehaviour
 {
-    //[SerializeField]
-    //Canvas settingsCanvas;
+    [HideInInspector]
+    public CreditsManager creditsManager;
+
+    private void Start()
+    {
+        creditsManager = gameObject.GetComponent<CreditsManager>();
+        creditsManager.canvas.enabled = false;
+    }
 
 
     public void PlayGame()
@@ -15,11 +21,12 @@ public class MainMenuManager : MonoBehaviour
     {
         //enable the setting canvas if its done like this
     }
+    public void ToggleCredits()
+    {
+        creditsManager.canvas.enabled = !creditsManager.canvas.enabled;
+    }
     public void QuitGame()
     {
         Application.Quit();
     }
-
-
-
 }
