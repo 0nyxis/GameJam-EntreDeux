@@ -173,9 +173,9 @@ TextureImporter:
       name: Idle_Spritesheet_Masque_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 45
         y: 0
-        width: 940
+        width: 888
         height: 2000
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -195,9 +195,9 @@ TextureImporter:
       name: Idle_Spritesheet_Masque_1
       rect:
         serializedVersion: 2
-        x: 940
+        x: 981
         y: 0
-        width: 940
+        width: 888
         height: 2000
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -217,9 +217,9 @@ TextureImporter:
       name: Idle_Spritesheet_Masque_2
       rect:
         serializedVersion: 2
-        x: 1880
+        x: 1924
         y: 0
-        width: 940
+        width: 888
         height: 2000
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -239,9 +239,9 @@ TextureImporter:
       name: Idle_Spritesheet_Masque_3
       rect:
         serializedVersion: 2
-        x: 2820
+        x: 2860
         y: 0
-        width: 940
+        width: 888
         height: 2000
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -261,9 +261,9 @@ TextureImporter:
       name: Idle_Spritesheet_Masque_4
       rect:
         serializedVersion: 2
-        x: 3760
+        x: 3803
         y: 0
-        width: 940
+        width: 888
         height: 2000
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -283,9 +283,9 @@ TextureImporter:
       name: Idle_Spritesheet_Masque_5
       rect:
         serializedVersion: 2
-        x: 4700
+        x: 4746
         y: 0
-        width: 940
+        width: 888
         height: 2000
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -305,9 +305,9 @@ TextureImporter:
       name: Idle_Spritesheet_Masque_6
       rect:
         serializedVersion: 2
-        x: 5640
+        x: 5682
         y: 0
-        width: 940
+        width: 888
         height: 2000
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -327,9 +327,9 @@ TextureImporter:
       name: Idle_Spritesheet_Masque_7
       rect:
         serializedVersion: 2
-        x: 6580
+        x: 6625
         y: 0
-        width: 940
+        width: 888
         height: 2000
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -349,9 +349,9 @@ TextureImporter:
       name: Idle_Spritesheet_Masque_8
       rect:
         serializedVersion: 2
-        x: 7520
+        x: 7561
         y: 0
-        width: 940
+        width: 888
         height: 2000
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -371,9 +371,9 @@ TextureImporter:
       name: Idle_Spritesheet_Masque_9
       rect:
         serializedVersion: 2
-        x: 8460
+        x: 8504
         y: 0
-        width: 940
+        width: 888
         height: 2000
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -393,9 +393,9 @@ TextureImporter:
       name: Idle_Spritesheet_Masque_10
       rect:
         serializedVersion: 2
-        x: 9400
+        x: 9440
         y: 0
-        width: 940
+        width: 888
         height: 2000
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -415,9 +415,9 @@ TextureImporter:
       name: Idle_Spritesheet_Masque_11
       rect:
         serializedVersion: 2
-        x: 10340
+        x: 10383
         y: 0
-        width: 940
+        width: 888
         height: 2000
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -437,9 +437,9 @@ TextureImporter:
       name: Idle_Spritesheet_Masque_12
       rect:
         serializedVersion: 2
-        x: 11280
+        x: 11326
         y: 0
-        width: 940
+        width: 888
         height: 2000
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -459,9 +459,9 @@ TextureImporter:
       name: Idle_Spritesheet_Masque_13
       rect:
         serializedVersion: 2
-        x: 12220
+        x: 12262
         y: 0
-        width: 940
+        width: 888
         height: 2000
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -481,9 +481,9 @@ TextureImporter:
       name: Idle_Spritesheet_Masque_14
       rect:
         serializedVersion: 2
-        x: 13160
+        x: 13205
         y: 0
-        width: 940
+        width: 888
         height: 2000
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -513,7 +513,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":15.0,"y":1.0},"gridSpriteSize":{"x":940.0,"y":2000.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":15.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Idle_Spritesheet_Masque_0: 6752620953613950831
       Idle_Spritesheet_Masque_1: -1825744147461920114

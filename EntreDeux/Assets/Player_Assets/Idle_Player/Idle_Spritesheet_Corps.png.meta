@@ -173,9 +173,9 @@ TextureImporter:
       name: Idle_Spritesheet_Corps_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 100
         y: 0
-        width: 940
+        width: 888
         height: 2000
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -195,9 +195,9 @@ TextureImporter:
       name: Idle_Spritesheet_Corps_1
       rect:
         serializedVersion: 2
-        x: 940
+        x: 1038
         y: 0
-        width: 940
+        width: 888
         height: 2000
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -217,9 +217,9 @@ TextureImporter:
       name: Idle_Spritesheet_Corps_2
       rect:
         serializedVersion: 2
-        x: 1880
+        x: 1976
         y: 0
-        width: 940
+        width: 888
         height: 2000
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -239,9 +239,9 @@ TextureImporter:
       name: Idle_Spritesheet_Corps_3
       rect:
         serializedVersion: 2
-        x: 2820
+        x: 2914
         y: 0
-        width: 940
+        width: 888
         height: 2000
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -261,9 +261,9 @@ TextureImporter:
       name: Idle_Spritesheet_Corps_4
       rect:
         serializedVersion: 2
-        x: 3760
+        x: 3852
         y: 0
-        width: 940
+        width: 888
         height: 2000
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -283,9 +283,9 @@ TextureImporter:
       name: Idle_Spritesheet_Corps_5
       rect:
         serializedVersion: 2
-        x: 4700
+        x: 4790
         y: 0
-        width: 940
+        width: 888
         height: 2000
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -305,9 +305,9 @@ TextureImporter:
       name: Idle_Spritesheet_Corps_6
       rect:
         serializedVersion: 2
-        x: 5640
+        x: 5728
         y: 0
-        width: 940
+        width: 888
         height: 2000
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -327,9 +327,9 @@ TextureImporter:
       name: Idle_Spritesheet_Corps_7
       rect:
         serializedVersion: 2
-        x: 6580
+        x: 6666
         y: 0
-        width: 940
+        width: 888
         height: 2000
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -349,9 +349,9 @@ TextureImporter:
       name: Idle_Spritesheet_Corps_8
       rect:
         serializedVersion: 2
-        x: 7520
+        x: 7604
         y: 0
-        width: 940
+        width: 888
         height: 2000
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -371,9 +371,9 @@ TextureImporter:
       name: Idle_Spritesheet_Corps_9
       rect:
         serializedVersion: 2
-        x: 8460
+        x: 8542
         y: 0
-        width: 940
+        width: 888
         height: 2000
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -393,9 +393,9 @@ TextureImporter:
       name: Idle_Spritesheet_Corps_10
       rect:
         serializedVersion: 2
-        x: 9400
+        x: 9480
         y: 0
-        width: 940
+        width: 888
         height: 2000
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -415,9 +415,9 @@ TextureImporter:
       name: Idle_Spritesheet_Corps_11
       rect:
         serializedVersion: 2
-        x: 10340
+        x: 10418
         y: 0
-        width: 940
+        width: 888
         height: 2000
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -437,9 +437,9 @@ TextureImporter:
       name: Idle_Spritesheet_Corps_12
       rect:
         serializedVersion: 2
-        x: 11280
+        x: 11356
         y: 0
-        width: 940
+        width: 908
         height: 2000
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -459,9 +459,9 @@ TextureImporter:
       name: Idle_Spritesheet_Corps_13
       rect:
         serializedVersion: 2
-        x: 12220
+        x: 12294
         y: 0
-        width: 940
+        width: 906
         height: 2000
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -481,9 +481,9 @@ TextureImporter:
       name: Idle_Spritesheet_Corps_14
       rect:
         serializedVersion: 2
-        x: 13160
+        x: 13232
         y: 0
-        width: 940
+        width: 931
         height: 2000
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -513,7 +513,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":15.0,"y":1.0},"gridSpriteSize":{"x":940.0,"y":2000.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":15.0,"y":1.0},"gridSpriteSize":{"x":888.0,"y":2000.0},"gridSpriteOffset":{"x":100.0,"y":0.0},"gridSpritePadding":{"x":50.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Idle_Spritesheet_Corps_0: 2405013102372726317
       Idle_Spritesheet_Corps_1: -3584013961336256137
