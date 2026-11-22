@@ -172,4 +172,9 @@ public class Player : MonoBehaviour
         else
             rb.gravityScale = gravityScale;
     }
+
+    public void InverseControl(bool _a)
+    {
+        isInverted = _a;
+    }
 }
