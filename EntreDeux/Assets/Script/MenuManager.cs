@@ -1,22 +1,29 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MainMenuManager : MonoBehaviour
+public class MenuManager : MonoBehaviour//rename to MenuManager
 {
     [HideInInspector]
     public CreditsManager creditsManager;
 
     private void Start()
     {
-        creditsManager = gameObject.GetComponent<CreditsManager>();
-        creditsManager.canvas.enabled = false;
+        
+        //if componentExist, attribute it
+        if (!gameObject.GetComponent<CreditsManager>().IsUnityNull())
+        {
+            creditsManager = gameObject.GetComponent<CreditsManager>();
+            creditsManager.canvas.enabled = false;
+        }
+
     }
 
-
-    public void PlayGame()
+    public void PlayScene(string sceneName)
     {
-        SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene(sceneName);
     }
+
     public void OpenSettings()
     {
         //enable the setting canvas if its done like this
