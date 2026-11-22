@@ -1,13 +1,15 @@
-using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class Player : MonoBehaviour
 {
     [Header("Movement Data (left/right)")]
+    [SerializeField] bool isInverted = false;
     [SerializeField] float maxSpeed = 8f;
     [SerializeField] float acceleration = 10f;
     [SerializeField] float deceleration = 10f;
+
+    public bool _isInverted => isInverted;
 
     private float moveInput;
 
@@ -32,7 +34,7 @@ public class Player : MonoBehaviour
 
     private float coyoteTimeCounter = 0.0f;
 
-
+ 
     private bool isJumping;
     private bool jumpQueued;
     private bool jumpReleased;
@@ -57,13 +59,12 @@ public class Player : MonoBehaviour
 
         ia_Move = InputSystem.actions.FindAction("Move");
         ia_Jump = InputSystem.actions.FindAction("Jump");
-
     }
 
     // Update is called once per frame
     void Update()
     {
-        moveInput = ia_Move.ReadValue<Vector2>().x;
+        moveInput = (isInverted) ? ia_Move.ReadValue<Vector2>().x * (-1) : ia_Move.ReadValue<Vector2>().x;
     
         WasLastMoveRight = moveInput > 0 ? true : (moveInput < 0 ? false : WasLastMoveRight);
 
