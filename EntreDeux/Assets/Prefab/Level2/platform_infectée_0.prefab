@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4812703307240350130}
   - component: {fileID: 4731063304553607808}
   - component: {fileID: 5644517186782889776}
+  - component: {fileID: 4772036056851567705}
   m_Layer: 3
   m_Name: "platform_infect\xE9e_0"
   m_TagString: Untagged
@@ -139,3 +140,17 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 3.07, y: 1.1587527}
   m_EdgeRadius: 0
+--- !u!114 &4772036056851567705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8791245869367858793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 865b824a31737a54db17612c4c0c4eb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlatformInvert
+  effectZoneCollider: {fileID: 0}
+  platformCollider: {fileID: 5644517186782889776}

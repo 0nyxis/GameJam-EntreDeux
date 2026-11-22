@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 339841563997366029}
   - component: {fileID: 9195077062120413204}
   - component: {fileID: 7813281094206556877}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -150,9 +150,9 @@ GameObject:
   - component: {fileID: 2440369186342324908}
   - component: {fileID: 240151859985142344}
   - component: {fileID: 8737009117117518196}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Character
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -303,7 +303,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6702075658322208197}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FeetB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -335,7 +335,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1093862653966919401}
   - component: {fileID: 2887798510752161912}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -534,7 +534,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6664520462755641817}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FeetA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -566,7 +566,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2109364519830130474}
   - component: {fileID: 8275793223973814839}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Mask
   m_TagString: Untagged
   m_Icon: {fileID: 0}
