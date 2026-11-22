@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using System;
 
 public class Player : MonoBehaviour
 {
@@ -34,7 +35,7 @@ public class Player : MonoBehaviour
 
     private float coyoteTimeCounter = 0.0f;
 
- 
+
     private bool isJumping;
     private bool jumpQueued;
     private bool jumpReleased;
@@ -48,6 +49,8 @@ public class Player : MonoBehaviour
     // Inputs Data
     InputAction ia_Move;
     InputAction ia_Jump;
+    public static event Action OnJumpPressed;
+
 
     private Rigidbody2D rb;
 
@@ -65,14 +68,17 @@ public class Player : MonoBehaviour
     void Update()
     {
         moveInput = (isInverted) ? ia_Move.ReadValue<Vector2>().x * (-1) : ia_Move.ReadValue<Vector2>().x;
-    
+
         WasLastMoveRight = moveInput > 0 ? true : (moveInput < 0 ? false : WasLastMoveRight);
 
         body.flipX = WasLastMoveRight;
         mask.flipX = WasLastMoveRight;
 
         if (ia_Jump.WasPressedThisFrame())
+        {
             jumpBufferCounter = jumpBufferTime;
+            OnJumpPressed?.Invoke();
+        }
         if (ia_Jump.WasReleasedThisFrame())
             jumpReleased = true;
     }
@@ -110,13 +116,14 @@ public class Player : MonoBehaviour
 
         float accelRate = Mathf.Abs(targetSpeed) > 0.01f ? acceleration : deceleration;
         float newVelocityX = Mathf.MoveTowards(rb.linearVelocity.x, targetSpeed, accelRate * Time.fixedDeltaTime);
-        
+
         rb.linearVelocity = new Vector2(newVelocityX, rb.linearVelocity.y);
     }
+
     private void HandleJump()
     {
         //Can jump
-        if(jumpBufferCounter > 0 && coyoteTimeCounter > 0)
+        if (jumpBufferCounter > 0 && coyoteTimeCounter > 0)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
 
@@ -129,9 +136,9 @@ public class Player : MonoBehaviour
         jumpQueued = false;
 
         // The player release the jump button -> Stop the "ascension" of the jump
-        if(jumpReleased)
+        if (jumpReleased)
         {
-            if(rb.linearVelocity.y > 0)
+            if (rb.linearVelocity.y > 0)
             {
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, rb.linearVelocity.y * 0.5f);
 
@@ -150,7 +157,7 @@ public class Player : MonoBehaviour
         }
 
         // The player has reached the maximum time for the jump, stopping the jump possibility
-        if(jumpHoldCounter <= 0 || rb.linearVelocity.y <= 0)
+        if (jumpHoldCounter <= 0 || rb.linearVelocity.y <= 0)
         {
             isJumping = false;
         }
@@ -163,7 +170,6 @@ public class Player : MonoBehaviour
 
         return (hitA.collider != null || hitB.collider != null);
     }
-
 
     private void HandleGravity()
     {
