@@ -6,9 +6,7 @@ public class PlayerDead : MonoBehaviour
     {
         if (collision.gameObject.layer == LayerMask.NameToLayer("Player"))
         {
-            print("dead");
             GameManager.PlayerDead();
-
         }
     }
 }

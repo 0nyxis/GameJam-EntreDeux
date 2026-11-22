@@ -103,7 +103,7 @@ public class PlatformMove : MonoBehaviour
 
         activated = true;
 
-        Debug.Log("googoogaga");
+        //Debug.Log("googoogaga");
 
         yield return new WaitForSeconds(stopTime);
 

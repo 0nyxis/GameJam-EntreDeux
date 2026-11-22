@@ -315,6 +315,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 5078013610430707782, guid: 904acede6f7856f4e8406e17031b5d1c, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 26
+      objectReference: {fileID: 0}
+    - target: {fileID: 5078013610430707782, guid: 904acede6f7856f4e8406e17031b5d1c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -27
+      objectReference: {fileID: 0}
     - target: {fileID: 7215716239929768415, guid: 904acede6f7856f4e8406e17031b5d1c, type: 3}
       propertyPath: m_Pivot.x
       value: 0
