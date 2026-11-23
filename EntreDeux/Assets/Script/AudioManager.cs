@@ -1,0 +1,127 @@
+using System;
+using System.Collections.Generic;
+using Unity.VisualScripting;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class AudioManager : MonoBehaviour
+{
+    static public AudioManager instance;
+
+    public float mainVolume = 1.0f;
+    public float stVolume = 1.0f;
+    public float sfxVolume = 1.0f;
+
+    [SerializeField] GameObject soundtrackObject;
+    [SerializeField] GameObject sfxObject;
+
+    [SerializeField] AudioSource soundtrackAudioSource;
+    [SerializeField] List<AudioSource> sfxAudioSources;
+    [SerializeField] List<AudioClip> soundtrackClips;
+    [SerializeField] List<AudioClip> sfxClips;
+
+    void Awake()
+    {
+        if (instance == null)
+        {
+            DontDestroyOnLoad(gameObject);
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        if (soundtrackObject)
+        {
+            soundtrackAudioSource = soundtrackObject.AddComponent<AudioSource>();
+        }
+        if (sfxObject)
+        {
+            for (int i = 0; i < 5; i++)
+            {
+                sfxAudioSources.Add(sfxObject.AddComponent<AudioSource>());
+            }
+        }
+
+        Scene scene = SceneManager.GetActiveScene();
+
+        ChangeScene(scene, scene);
+
+        SceneManager.activeSceneChanged += ChangeScene;
+    }
+
+    void ChangeScene(Scene current, Scene next)
+    {
+        int sceneIndex = next.buildIndex;
+
+        if (soundtrackAudioSource != null)
+        {
+            StopAllSounds();
+
+            soundtrackAudioSource.volume = 0.5f * mainVolume * stVolume;
+
+            switch(sceneIndex)
+            {
+                case 0:
+                case 4:
+                    if (soundtrackClips[0])
+                    {
+                        soundtrackAudioSource.clip = soundtrackClips[0];
+                    }
+                    break;
+                case 1:
+                    if (soundtrackClips[1])
+                    { 
+                        soundtrackAudioSource.clip = soundtrackClips[1]; 
+                    }
+                    break;
+                case 2:
+                    if (soundtrackClips[2])
+                    {
+                        soundtrackAudioSource.clip = soundtrackClips[2];
+                    }
+                    break;
+                case 3:
+                case 5:
+                    if (soundtrackClips[3])
+                    {
+                        soundtrackAudioSource.clip = soundtrackClips[3];
+                    }
+                    break;
+                default:
+                    break;
+            }
+
+            soundtrackAudioSource.loop = true;
+            soundtrackAudioSource.Play();
+        }
+    }
+
+    void StopAllSounds()
+    {
+        if (soundtrackAudioSource != null)
+        {
+            soundtrackAudioSource.Stop();
+        }
+        foreach (AudioSource sources in sfxAudioSources)
+        {
+            sources.Stop();
+        }
+    }
+
+    void OnDestroy()
+    {
+        SceneManager.activeSceneChanged -= ChangeScene;
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+}
