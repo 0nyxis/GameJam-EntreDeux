@@ -174,7 +174,7 @@ public class MemoryCollectibleBehavior : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (((1 << collision.gameObject.layer) & targetLayerMask) != 0)
+        if (((1 << collision.gameObject.layer) & targetLayerMask) != 0 && state == State.Idle)
         {
             //Add it to the list the player has (component or inScript) so it can be affected by the follow player script 
             ///uncomment this (will need a memoryCollectibleList in the player)
@@ -183,6 +183,11 @@ public class MemoryCollectibleBehavior : MonoBehaviour
 
             target = collision.transform;
             state = State.Following;
+
+            if (AudioManager.instance != null)
+            {
+                AudioManager.instance.PlaySound("memory");
+            }
         }
     }
 

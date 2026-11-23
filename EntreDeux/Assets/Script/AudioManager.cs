@@ -152,8 +152,15 @@ public class AudioManager : MonoBehaviour
     void Update()
     {
         delta += Time.deltaTime;
-
-        //if ()
+        
+        if (delta >= clockTimer)
+        {
+            delta = 0.0f;
+        }
+        else
+        {
+            return;
+        }
 
         if (sfxObject != null)
         {
