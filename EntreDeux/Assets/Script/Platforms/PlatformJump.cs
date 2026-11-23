@@ -14,11 +14,6 @@ public class PlatformJump : MonoBehaviour
         PlatformChange(isPlatformActive);
     }
 
-    void Update()
-    {
-
-    }
-
     private void OnEnable()
     {
         Player.OnJumpPressed += PlayJumpFeedback;
@@ -39,12 +34,17 @@ public class PlatformJump : MonoBehaviour
     {
         foreach (GameObject platA in PlatformObjectA)
         {
-            platA.SetActive(change);
+            //platA.SetActive(change);
+            platA.GetComponent<Renderer>().enabled = change;
+            platA.GetComponent<Collider2D>().enabled = change;
         }
 
         foreach (GameObject platB in PlatformObjectB)
         {
-            platB.SetActive(!change);
+            //platB.SetActive(!change);
+            platB.GetComponent<Renderer>().enabled = !change;
+            platB.GetComponent<Collider2D>().enabled = !change;
+
         }
     }
 }

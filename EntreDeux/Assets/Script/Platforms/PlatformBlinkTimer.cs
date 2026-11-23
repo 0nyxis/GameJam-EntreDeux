@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Threading.Tasks;
 using UnityEngine;
 
 public class PlatformTimer : MonoBehaviour
@@ -16,23 +17,25 @@ public class PlatformTimer : MonoBehaviour
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    async Task Start()
     {
         collider2D = GetComponent<Collider2D>();
         renderer = GetComponent<SpriteRenderer>();
+
+        StartCoroutine(Wait(firstDispawn, Dispawn()));
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (!started)
-        {
-            float CurrentTime = Time.time;
-            if (CurrentTime > firstDispawn)
-            {
-                StartCoroutine(Dispawn());
-            }
-        }
+        //if (!started)
+        //{
+        //    float CurrentTime = Time.time;
+        //    if (CurrentTime > firstDispawn)
+        //    {
+        //        StartCoroutine(Dispawn());
+        //    }
+        //}
     }
 
     private IEnumerator Wait(float _secondToWait, IEnumerator _function)
