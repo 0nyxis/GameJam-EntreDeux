@@ -15,9 +15,6 @@ public class HealCollectibleBehavior : MonoBehaviour
     {
         startPosition = transform.position;
         endPosition = new Vector3(startPosition.x, startPosition.y + 1, startPosition.z);
-
-        //this.gameObject.GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("spriteName");
-        //this.gameObject.GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("LiveRajangReaction");
     }
 
     // Update is called once per frame
@@ -33,14 +30,14 @@ public class HealCollectibleBehavior : MonoBehaviour
         {
             //getComponent that handles the hp of the player and increase them
             ///uncomment this and either make a fct to heal the player or adjust the hp directly
-            ///collision.gameObject.GetComponent<Player>().Heal(healAmount);
+            collision.gameObject.GetComponent<Player>().Heal(healAmount);
 
             if (AudioManager.instance != null)
             {
                 AudioManager.instance.PlaySound("pills");
             }
 
-            Destroy(this.gameObject);
+            Destroy(gameObject);
         }
         //Debug.Log("Fumble");
     }
@@ -49,7 +46,6 @@ public class HealCollectibleBehavior : MonoBehaviour
     {
         timer += Time.deltaTime;
         float t = (Mathf.Sin(timer) + 1) / 2.0f;
-        //float t = Mathf.PingPong(timer * 0.5f, 1.0f);
-        this.gameObject.transform.position = Vector3.Lerp(startPosition, endPosition, t);
+        transform.position = Vector3.Lerp(startPosition, endPosition, t);
     }
 }

@@ -1,9 +1,6 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
-using UnityEditor.Rendering;
-using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -220,6 +217,10 @@ public class Player : MonoBehaviour
     public void AddMemory(MemoryCollectibleBehavior _a)
     {
         memories.Add(_a);
+    }
+    public List<MemoryCollectibleBehavior> GetMemorie()
+    {
+        return memories;
     }
     public void TakeDamage(int _damage)
     {
