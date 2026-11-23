@@ -1,11 +1,13 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 public class PlatformDissolve : MonoBehaviour
 {
     [SerializeField] private LayerMask playerLayerMask;
     [SerializeField] private float timeBeforeColliderOff = 1f;
     [SerializeField] private float timeForAnimation = 2f;
+    [SerializeField] private Light2D light;
 
     private Collider2D collider2D;
     private bool wait = false;
@@ -43,12 +45,12 @@ public class PlatformDissolve : MonoBehaviour
 
     private IEnumerator DestroyItself()
     {
-        collider2D.excludeLayers = playerLayerMask;
+        collider2D.enabled = false;
+        GetComponent<SpriteRenderer>().enabled = false;
+        light.enabled = false;
 
         dissolving = true;
 
         yield return new WaitForSeconds(timeForAnimation);
-
-        Destroy(gameObject);
     }
 }

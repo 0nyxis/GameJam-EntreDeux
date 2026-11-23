@@ -180,7 +180,21 @@ public class Player : MonoBehaviour
         RaycastHit2D hitA = Physics2D.Raycast(groundCheckA.position, Vector2.down, groundCheckDist, groundLayer);
         RaycastHit2D hitB = Physics2D.Raycast(groundCheckB.position, Vector2.down, groundCheckDist, groundLayer);
 
-        return (hitA.collider != null || hitB.collider != null);
+        if (hitA.collider != null || hitB.collider != null)
+        {
+            if (hitA.collider != null)
+            {
+                transform.SetParent(hitA.collider.transform, true);
+            }
+            else
+            {
+                transform.SetParent(hitB.collider.transform, true);
+            }
+
+            return true;
+        }
+
+        return false;
     }
 
     private void HandleGravity()
