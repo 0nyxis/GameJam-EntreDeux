@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEditor.Rendering;
 using UnityEditor.ShaderGraph.Internal;
@@ -58,7 +59,10 @@ public class Player : MonoBehaviour
 
     private Rigidbody2D rb;
     private Interact interactScript;
+    private int lifePoint = 100;
+    private List<MemoryCollectibleBehavior> memories = new List<MemoryCollectibleBehavior>();
 
+    ////////////////////////////////////////////////////////////////////////////
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -79,7 +83,10 @@ public class Player : MonoBehaviour
 
         body.flipX = WasLastMoveRight;
         mask.flipX = WasLastMoveRight;
-
+        if (lifePoint <= 0)
+        {
+            GameManager.PlayerDead();
+        }
         if (ia_Jump.WasPressedThisFrame())
         {
             jumpBufferCounter = jumpBufferTime;
@@ -94,8 +101,6 @@ public class Player : MonoBehaviour
             StartCoroutine(interactScript.Boom(Camera.main.WorldToViewportPoint(transform.position)));
         }
     }
-
-
 
     void FixedUpdate()
     {
@@ -123,6 +128,8 @@ public class Player : MonoBehaviour
 
         //Debug.Log($"Input: {moveInput:F1} | " + $"Grounded {isGrounded} | " + $"Velocity X: {rb.linearVelocity.x:F2} | " + $"Velocity Y: {rb.linearVelocity.y}");
     }
+    ////////////////////////////////////////////////////////////////////////////
+    
 
     private void HandleMovement()
     {
@@ -205,8 +212,21 @@ public class Player : MonoBehaviour
             rb.gravityScale = gravityScale;
     }
 
+
     public void InverseControl(bool _a)
     {
         isInverted = _a;
+    }
+    public void AddMemory(MemoryCollectibleBehavior _a)
+    {
+        memories.Add(_a);
+    }
+    public void TakeDamage(int _damage)
+    {
+        lifePoint -= _damage;
+    }
+    public void Heal(int _heal)
+    {
+        lifePoint += _heal;
     }
 }

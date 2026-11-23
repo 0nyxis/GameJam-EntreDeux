@@ -157,10 +157,10 @@ MonoBehaviour:
   points:
   - {fileID: 0}
   - {fileID: 0}
-  move: 1
+  move: 0
   playerLayerMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   speed: 1.5
   stopTime: 2
   forward: 1

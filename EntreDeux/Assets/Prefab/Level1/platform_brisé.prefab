@@ -155,7 +155,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlatformDissolve
   playerLayerMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   timeBeforeColliderOff: 1
   timeForAnimation: 2
   light: {fileID: 1200300571708342180}
