@@ -18,7 +18,7 @@ public class Player : MonoBehaviour
     private float moveInput;
 
     bool WasLastMoveRight = false;
-    bool shockwave = false;
+    [SerializeField] private bool shockwave = false;
 
     [Header("Ground Detection Data")]
     [SerializeField] private Transform groundCheckA;
@@ -91,29 +91,13 @@ public class Player : MonoBehaviour
         {
             jumpReleased = true;
         }
-        if (ia_Interact.WasReleasedThisFrame() && !shockwave)
+        if (ia_Interact.WasReleasedThisFrame() && !shockwave && )
         {
             StartCoroutine(Boom(Camera.main.WorldToViewportPoint(transform.position)));
         }
     }
 
-    private IEnumerator Boom(Vector2 _pos)
-    {
-        shockwave = true;
-        leShaderGraph.SetVector("_FocalPoint", _pos);
 
-        float t = 0.0f;
-
-        while (t < 1.0f)
-        {
-            t += Time.deltaTime;
-            leShaderGraph.SetFloat("_Progress", t);
-            yield return null;
-        }
-
-        leShaderGraph.SetFloat("_Progress", 0.99f);
-        shockwave = false;
-    }
 
     void FixedUpdate()
     {
