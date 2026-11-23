@@ -218,6 +218,10 @@ public class Player : MonoBehaviour
     {
         memories.Add(_a);
     }
+    public List<MemoryCollectibleBehavior> GetMemorie()
+    {
+        return memories;
+    }
     public void TakeDamage(int _damage)
     {
         lifePoint -= _damage;

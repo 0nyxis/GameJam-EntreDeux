@@ -149,6 +149,7 @@ GameObject:
   - component: {fileID: 665503140708574844}
   - component: {fileID: 2440369186342324908}
   - component: {fileID: 240151859985142344}
+  - component: {fileID: 4067338137167734499}
   - component: {fileID: 8737009117117518196}
   m_Layer: 6
   m_Name: Character
@@ -272,7 +273,19 @@ MonoBehaviour:
   coyoteTime: 0.15
   body: {fileID: 2887798510752161912}
   mask: {fileID: 8275793223973814839}
-  leShaderGraph: {fileID: -876546973899608171, guid: fdfcd0db86225e54391969d9574b5185, type: 3}
+--- !u!114 &4067338137167734499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2497870810731110565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57680293e1092c748b4ef0cc7cf9c6b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MemoryCarrier
+  Memories: []
 --- !u!95 &8737009117117518196
 Animator:
   serializedVersion: 7

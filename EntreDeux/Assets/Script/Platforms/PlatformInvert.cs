@@ -15,7 +15,7 @@ public class PlatformInvert : MonoBehaviour
     private void Start()
     {
         BoxCollider2D collider = gameObject.AddComponent<BoxCollider2D>();
-        collider.size = (platformCollider.size * new Vector2(1f, 8f)) + new Vector2(0.1f, 0.1f);
+        collider.size = (platformCollider.size * new Vector2(4f, 8f)) + new Vector2(0.1f, 0.1f);
         collider.offset = new Vector2(0, (collider.size.y / 2) - (platformCollider.size.y / 2));
         collider.isTrigger = true;
     }
@@ -64,6 +64,14 @@ public class PlatformInvert : MonoBehaviour
         else
         {
             // Il touche la platform de dehors la platform ????
+        }
+    }
+
+    private void Update()
+    {
+        if (playerS != null && playerInside && playerS._isInverted && !GetComponentInChildren<Player>())
+        {
+            playerS.InverseControl(false);
         }
     }
 }

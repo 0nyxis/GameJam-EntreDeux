@@ -37,15 +37,11 @@ public class MemoryCollectibleBehavior : MonoBehaviour
     [Tooltip("Distance à partir de laquelle on considère être arrivé à destination.")]
     [SerializeField] private float arrivalDistance = 0.15f;
 
-    //////////////////////////////////////////////////////////////////////////////////////////
-    //[Tooltip("Empty if the memory hasn't been collected")]
-    //[HideInInspector]
-    //public Player playerRef;
+    private MemoryCarrier carrier;
+    private bool collected;
 
-    ////animation variables
-    //private Vector3 startPosition;
-    //private Vector3 endPosition;
-    //////////////////////////////////////////////////////////////////////////////////////////
+    /// <summary>True quand le souvenir a atteint le point donné par GotoTarget.</summary>
+    public bool HasArrived { get; private set; }
 
     private State state = State.Idle;
     private Transform target;
@@ -113,7 +109,6 @@ public class MemoryCollectibleBehavior : MonoBehaviour
     //{
     //    transform.position = new Vector3(playerRef.transform.position.x - 1, playerRef.transform.position.y + 1, playerRef.transform.position.z);
     //}
-
     //////////////////////////////////////////////////////////////////////////////////////////
 
     private Vector2 ComputeAnchor()
@@ -124,6 +119,7 @@ public class MemoryCollectibleBehavior : MonoBehaviour
                 if (Vector2.Distance(basePosition, destination) <= arrivalDistance)
                 {
                     idleCenter = destination;
+                    HasArrived = true;          // ← ajouté
                     state = State.Idle;
                 }
                 return destination;
@@ -154,41 +150,46 @@ public class MemoryCollectibleBehavior : MonoBehaviour
         return new Vector2(x, y) * radius;
     }
 
-    /// <summary>
-    /// Lance un nouveau déplacement vers un point unique.
-    /// </summary>
     public void GotoTarget(Vector2 newDestination)
     {
         destination = newDestination;
+        HasArrived = false;
         state = State.GoingTo;
     }
 
-    /// <summary>
-    /// Oublier le déplacement et suivre la cible.
-    /// </summary>
     public void DoNotGotoTargetAnymore()
     {
+        HasArrived = false;
         if (target != null)
+        {
             state = State.Following;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (((1 << collision.gameObject.layer) & targetLayerMask) != 0 && state == State.Idle)
+        if (collected) return;
+        if (((1 << collision.gameObject.layer) & targetLayerMask) == 0) return;
+
+        MemoryCarrier foundCarrier = collision.GetComponentInParent<MemoryCarrier>();
+        if (foundCarrier == null) return;
+
+        collected = true;
+        carrier = foundCarrier;
+        carrier.Add(this);
+
+        target = collision.transform;
+        state = State.Following;
+
+        if (AudioManager.instance != null)
         {
-            //Add it to the list the player has (component or inScript) so it can be affected by the follow player script 
-            ///uncomment this (will need a memoryCollectibleList in the player)
-            ///playerRef = collision.gameObject.GetComponent<Player>();
-            ///playerRef.MemoryList.Add(this);
-
-            target = collision.transform;
-            state = State.Following;
-
-            if (AudioManager.instance != null)
-            {
-                AudioManager.instance.PlaySound("memory");
-            }
+            AudioManager.instance.PlaySound("memory");
         }
+    }
+
+    private void OnDestroy()
+    {
+        if (carrier != null) carrier.Remove(this);
     }
 
     private void OnDrawGizmos()

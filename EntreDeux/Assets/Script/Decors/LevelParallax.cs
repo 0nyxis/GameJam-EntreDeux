@@ -1,12 +1,8 @@
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UIElements;
 
 public class LevelParallax : MonoBehaviour
 {
-    /// <summary>
-    /// Class visible dans l'éditeur, me permettant de rentrer les différents background en direct.
-    /// </summary>
     [System.Serializable]
     public class BackgroundData
     {
@@ -14,200 +10,179 @@ public class LevelParallax : MonoBehaviour
 
         [Range(0f, 1f)]
         public float speed = 0.5f;
+
+        [Tooltip("Coché : le layer défile (parallaxe) et se répète en X. Décoché : fixe en X.")]
         public bool wrapX = true;
+        [Tooltip("Coché : le layer défile (parallaxe) et se répète en Y. Décoché : fixe en Y.")]
         public bool wrapY = true;
+
+        [Tooltip("Position du layer par rapport à la caméra au démarrage.")]
         public Vector2 startOffset = Vector2.zero;
     }
 
-    /// <summary>
-    /// Classes créées et enregistrées dans une list dépendamment du nombre de layers de background dans le jeu.
-    /// </summary>
     private class Layer
     {
         public Transform parent;
-        private Transform transformLeft;
-        private Transform transformMiddle;
-        private Transform transformRight;
-        private Transform transformUp;
-        private Transform transformDown;
-        private float parallaxFactor;
-        private bool wrapX;
-        private bool wrapY;
-        private Vector2 startOffset;
 
-        public Layer(BackgroundData _datas, int layerOrder, Transform _parent)
+        private Transform tMiddle, tLeft, tRight, tUp, tDown;
+        private readonly float speed;
+        private readonly bool wrapX, wrapY;
+        private readonly Vector2 startOffset;
+        private readonly Vector2 anchor;   // position de la caméra au démarrage
+        private readonly Vector2 size;     // taille d'une tuile (monde)
+        private Vector2 origin;            // position locale de la tuile centrale
+
+        public Layer(BackgroundData data, int layerOrder, Transform root, Vector2 cameraPos)
         {
-            wrapX = _datas.wrapX;
-            wrapY = _datas.wrapY;
-            parallaxFactor = _datas.speed;
-            parent = CreateBackgroundParents(_parent, layerOrder);
-            transformMiddle = CreateSpritesGetTransform(_datas.sprite, layerOrder);
+            wrapX = data.wrapX;
+            wrapY = data.wrapY;
+            speed = data.speed;
+            startOffset = data.startOffset;
+            anchor = cameraPos;
+            origin = startOffset;
+
+            parent = new GameObject("BackgroundLayer_" + layerOrder).transform;
+            parent.SetParent(root);
+            parent.position = new Vector3(anchor.x, anchor.y, root.position.z);
+            parent.localRotation = Quaternion.identity;
+            parent.localScale = Vector3.one;
+
+            tMiddle = CreateTile(data.sprite, layerOrder);
+            size = tMiddle.GetComponent<SpriteRenderer>().bounds.size;
 
             if (wrapX)
             {
-                transformLeft = CreateSpritesGetTransform(_datas.sprite, layerOrder);
-                transformRight = CreateSpritesGetTransform(_datas.sprite, layerOrder);
+                tLeft = CreateTile(data.sprite, layerOrder);
+                tRight = CreateTile(data.sprite, layerOrder);
             }
-
             if (wrapY)
             {
-                transformUp = CreateSpritesGetTransform(_datas.sprite, layerOrder);
-                transformDown = CreateSpritesGetTransform(_datas.sprite, layerOrder);
+                tUp = CreateTile(data.sprite, layerOrder);
+                tDown = CreateTile(data.sprite, layerOrder);
             }
 
-            SetBackgroundsPositions();
+            PlaceTiles();
         }
 
-        public Transform CreateBackgroundParents(Transform _parent, int layerOrder)
+        private Transform CreateTile(Sprite sprite, int layerOrder)
         {
-            GameObject empty = new GameObject("BackgroundLayer");
-
-            empty.transform.SetParent(_parent);
-
-            empty.transform.localPosition = Vector3.zero;
-            empty.transform.localRotation = Quaternion.identity;
-            empty.transform.localScale = Vector3.one;
-
-            return empty.transform;
+            GameObject go = new GameObject("Background_" + sprite.name);
+            SpriteRenderer sr = go.AddComponent<SpriteRenderer>();
+            sr.sprite = sprite;
+            sr.sortingOrder = -10 - (layerOrder * 2); // -12, -14, -16...
+            go.transform.SetParent(parent, false);
+            return go.transform;
         }
 
-        private Transform CreateSpritesGetTransform(Sprite _sprite, int layerOrder)
+        private void PlaceTiles()
         {
-            // Create a new GameObject for each background sprite
-            GameObject backgroundObject = new GameObject("Background_" + _sprite.name);
-            SpriteRenderer spriteRenderer = backgroundObject.AddComponent<SpriteRenderer>();
-            spriteRenderer.sprite = _sprite;
-            spriteRenderer.sortingOrder = -10 - (layerOrder * 2); // Set the sorting order to ensure proper rendering (-10 ; -12, -14, -16....) 
-            // Debug.Log("Setting sprite for " + backgroundObject.name + " : " + _sprite.rect.size.x + "x" + _sprite.rect.size.y);
-            // Set the position of the background
-            backgroundObject.transform.parent = parent;
-            backgroundObject.transform.localPosition = Vector3.zero;
-            return backgroundObject.transform;
-        }
-
-        private void SetBackgroundsPositions()
-        {
-            // Implementation for setting background positions
-            Vector3 size = transformMiddle.GetComponent<SpriteRenderer>().bounds.size;
-
-            transformMiddle.localPosition = (Vector2)(new Vector2(0, 0) + startOffset);
-
+            tMiddle.localPosition = origin;
             if (wrapX)
             {
-                transformLeft.localPosition = (Vector2)(new Vector2(-size.x, 0) + startOffset);
-                transformRight.localPosition = (Vector2)(new Vector2(size.x, 0) + startOffset);
+                tLeft.localPosition = origin + new Vector2(-size.x, 0);
+                tRight.localPosition = origin + new Vector2(size.x, 0);
             }
             if (wrapY)
             {
-                transformDown.localPosition = (Vector2)(new Vector2(0, -size.y) + startOffset);
-                transformUp.localPosition = (Vector2)(new Vector2(0, size.y) + startOffset);
+                tDown.localPosition = origin + new Vector2(0, -size.y);
+                tUp.localPosition = origin + new Vector2(0, size.y);
             }
         }
 
-        public void WrapBackground(Vector2 _cameraPos)
+        public void UpdateLayer(Vector2 cameraPos)
         {
-            Vector2 size = transformMiddle.GetComponent<SpriteRenderer>().bounds.size;
+            // Parallaxe seulement sur les axes "wrap". Sinon le layer reste fixe dans le monde.
+            float x = wrapX ? anchor.x + (cameraPos.x - anchor.x) * (1f - speed) : anchor.x;
+            float y = wrapY ? anchor.y + (cameraPos.y - anchor.y) * (1f - speed) : anchor.y;
+            parent.position = new Vector3(x, y, parent.position.z);
 
-            if (_cameraPos.x < transformLeft.position.x + size.x / 2f)
-            {
-                UpdateBackground(Vector2.left);
-            }
-            else if (_cameraPos.x > transformRight.position.x - size.x / 2f)
-            {
-                UpdateBackground(Vector2.right);
-            }
+            if (!wrapX && !wrapY) return;
 
-            if (_cameraPos.y < transformDown.position.y + size.y / 2f)
-            {
-                UpdateBackground(Vector2.down);
-            }
-            else if(_cameraPos.y < transformUp.position.y - size.y / 2f)
-            {
-                UpdateBackground(Vector2.up);
-            }
-        }
+            bool moved = false;
+            Vector2 center = (Vector2)parent.position + origin;
 
-        private void UpdateBackground(Vector2 _dir)
-        {
-            // Implementation for setting background positions
-            Vector3 size = transformMiddle.GetComponent<SpriteRenderer>().bounds.size;
-
-            if (_dir.x < 0) // Vers la Gauche
+            if (wrapX && size.x > 0f)
             {
-                Transform temp = transformRight;
-                transformRight = transformMiddle;
-                transformMiddle = transformLeft;
-                transformLeft = temp;
-                transformLeft.localPosition = transformMiddle.localPosition - new Vector3(size.x, 0, 0);
+                while (cameraPos.x < center.x - size.x / 2f) 
+                { 
+                    origin.x -= size.x; center.x -= size.x; moved = true; 
+                }
+                while (cameraPos.x > center.x + size.x / 2f) 
+                { 
+                    origin.x += size.x; center.x += size.x; moved = true; 
+                }
             }
-            else if (_dir.x > 0) // Vers la Droite
+            if (wrapY && size.y > 0f)
             {
-                Transform temp = transformLeft;
-                transformLeft = transformMiddle;
-                transformMiddle = transformRight;
-                transformRight = temp;
-                transformRight.localPosition = transformMiddle.localPosition + new Vector3(size.x, 0, 0);
+                while (cameraPos.y < center.y - size.y / 2f) 
+                { 
+                    origin.y -= size.y; center.y -= size.y; moved = true; 
+                }
+                while (cameraPos.y > center.y + size.y / 2f) 
+                { 
+                    origin.y += size.y; center.y += size.y; moved = true; 
+                }
             }
 
-            if (_dir.y < 0) // Vers le Bas
+            if (moved)
             {
-                Transform temp = transformUp;
-                transformUp = transformMiddle;
-                transformMiddle = transformDown;
-                transformDown = temp;
-                transformDown.localPosition = transformMiddle.localPosition - new Vector3(size.x, 0, 0);
-            }
-            else if (_dir.y > 0) // Vers le Haut
-            {
-                Transform temp = transformDown;
-                transformDown = transformMiddle;
-                transformMiddle = transformUp;
-                transformUp = temp;
-                transformUp.localPosition = transformMiddle.localPosition + new Vector3(size.x, 0, 0);
+                PlaceTiles(); 
             }
         }
 
         public void DestroyLayer()
         {
-            Destroy(parent.gameObject);
+            if (parent != null)
+            {
+                Object.Destroy(parent.gameObject); 
+            }
         }
     }
 
-    [SerializeField] public List<BackgroundData> backgroundSprites; // Array of all the backgrounds to be parallaxed
+    [SerializeField] public List<BackgroundData> backgroundSprites;
 
-    private List<Layer> backgroundLayers = new List<Layer>(); // Array of all the backgrounds to be parallaxed
+    private readonly List<Layer> backgroundLayers = new List<Layer>();
+    private Camera mainCamera;
 
     private void Awake()
     {
-        // Ensure that the backgroundSprites list is not empty
         if (backgroundSprites == null || backgroundSprites.Count == 0)
         {
             Debug.LogWarning("Background sprites list is empty. Please assign sprites in the inspector.");
         }
     }
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    public void StartBackgrounds(float _cameraPosX)
+    private void Start()
     {
-        float currentCameraSize = Camera.main.orthographicSize;
-        // Debug.Log("Current Camera Size: " + currentCameraSize);
-        transform.position = new Vector3(_cameraPosX, -currentCameraSize, 0);
+        mainCamera = Camera.main;
+        StartBackgrounds(mainCamera.transform.position);
+    }
+
+    private void Update()
+    {
+        UpdateBackgrounds(mainCamera.transform.position);
+    }
+
+    public void StartBackgrounds(Vector2 cameraPos)
+    {
+        transform.position = new Vector3(cameraPos.x, cameraPos.y, 0f);
 
         for (int i = 0; i < backgroundSprites.Count; i++)
         {
-            backgroundLayers.Add(new Layer(backgroundSprites[i], i + 1, transform));
+            if (backgroundSprites[i].sprite == null) continue;
+            {
+                backgroundLayers.Add(new Layer(backgroundSprites[i], i + 1, transform, cameraPos));
+            }
         }
     }
 
-    // Update is called once per frame
-    public void UpdateBackgrounds(Vector2 _cameraPos)
+    public void UpdateBackgrounds(Vector2 cameraPos)
     {
-        transform.position = new Vector3(_cameraPos.x, _cameraPos.y, transform.position.z);
+        transform.position = new Vector3(cameraPos.x, cameraPos.y, transform.position.z);
 
         for (int i = 0; i < backgroundLayers.Count; i++)
         {
-            backgroundLayers[i].parent.position = new Vector3(_cameraPos.x * (1f - backgroundSprites[i].speed), backgroundLayers[i].parent.position.y, backgroundLayers[i].parent.position.z);
-            backgroundLayers[i].WrapBackground(_cameraPos);
+            backgroundLayers[i].UpdateLayer(cameraPos);
         }
     }
 
