@@ -1,9 +1,13 @@
 using System.Collections;
 using UnityEngine;
 
-public class IPlatformADecors : MonoBehaviour
+public class Interact : MonoBehaviour
 {
+    [Header("Other Data")]
+    [SerializeField] Material leShaderGraph;
 
+    private bool canInteract = false;
+    public bool _canInteract => canInteract;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -11,7 +15,7 @@ public class IPlatformADecors : MonoBehaviour
         // Bonjour Monsieur Cenzo
         // Bonjour :)
 
-
+        leShaderGraph = Resources.Load<Material>("SG_Shockwave");
     }
 
     // Update is called once per frame
@@ -22,7 +26,7 @@ public class IPlatformADecors : MonoBehaviour
 
     public IEnumerator Boom(Vector2 _pos)
     {
-        shockwave = true;
+        canInteract = true;
         leShaderGraph.SetVector("_FocalPoint", _pos);
 
         float t = 0.0f;
@@ -34,6 +38,6 @@ public class IPlatformADecors : MonoBehaviour
             yield return null;
         }
 
-        shockwave = false;
+        canInteract = false;
     }
 }

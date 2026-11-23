@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEditor.Rendering;
 using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
@@ -18,7 +19,6 @@ public class Player : MonoBehaviour
     private float moveInput;
 
     bool WasLastMoveRight = false;
-    [SerializeField] private bool shockwave = false;
 
     [Header("Ground Detection Data")]
     [SerializeField] private Transform groundCheckA;
@@ -49,9 +49,6 @@ public class Player : MonoBehaviour
     [SerializeField] SpriteRenderer mask;
     Animator animator;
 
-    [Header("Other Data")]
-    [SerializeField] Material leShaderGraph;
-
     // Inputs Data
     InputAction ia_Move;
     InputAction ia_Jump;
@@ -60,13 +57,14 @@ public class Player : MonoBehaviour
 
 
     private Rigidbody2D rb;
+    private Interact interactScript;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-
+        interactScript = transform.AddComponent<Interact>();
         ia_Move = InputSystem.actions.FindAction("Move");
         ia_Jump = InputSystem.actions.FindAction("Jump");
         ia_Interact = InputSystem.actions.FindAction("Interact");
@@ -91,9 +89,9 @@ public class Player : MonoBehaviour
         {
             jumpReleased = true;
         }
-        if (ia_Interact.WasReleasedThisFrame() && !shockwave && )
+        if (ia_Interact.WasReleasedThisFrame() && interactScript._canInteract)
         {
-            StartCoroutine(Boom(Camera.main.WorldToViewportPoint(transform.position)));
+            StartCoroutine(interactScript.Boom(Camera.main.WorldToViewportPoint(transform.position)));
         }
     }
 
