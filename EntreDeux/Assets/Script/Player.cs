@@ -1,6 +1,9 @@
+using System;
+using System.Collections;
+using UnityEditor.Rendering;
+using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using System;
 
 public class Player : MonoBehaviour
 {
@@ -15,6 +18,7 @@ public class Player : MonoBehaviour
     private float moveInput;
 
     bool WasLastMoveRight = false;
+    bool shockwave = false;
 
     [Header("Ground Detection Data")]
     [SerializeField] private Transform groundCheckA;
@@ -46,9 +50,13 @@ public class Player : MonoBehaviour
     [SerializeField] SpriteRenderer mask;
     Animator animator;
 
+    [Header("Other Data")]
+    [SerializeField] Material leShaderGraph;
+
     // Inputs Data
     InputAction ia_Move;
     InputAction ia_Jump;
+    InputAction ia_Interact;
     public static event Action OnJumpPressed;
 
 
@@ -62,6 +70,7 @@ public class Player : MonoBehaviour
 
         ia_Move = InputSystem.actions.FindAction("Move");
         ia_Jump = InputSystem.actions.FindAction("Jump");
+        ia_Interact = InputSystem.actions.FindAction("Interact");
     }
 
     // Update is called once per frame
@@ -80,7 +89,31 @@ public class Player : MonoBehaviour
             OnJumpPressed?.Invoke();
         }
         if (ia_Jump.WasReleasedThisFrame())
+        {
             jumpReleased = true;
+        }
+        if (ia_Interact.WasReleasedThisFrame() && !shockwave)
+        {
+            StartCoroutine(Boom(Camera.main.WorldToViewportPoint(transform.position)));
+        }
+    }
+
+    private IEnumerator Boom(Vector2 _pos)
+    {
+        shockwave = true;
+        leShaderGraph.SetVector("_FocalPoint", _pos);
+
+        float t = 0.0f;
+
+        while (t < 1.0f)
+        {
+            t += Time.deltaTime;
+            leShaderGraph.SetFloat("_Progress", t);
+            yield return null;
+        }
+
+        leShaderGraph.SetFloat("_Progress", 0.99f);
+        shockwave = false;
     }
 
     void FixedUpdate()
