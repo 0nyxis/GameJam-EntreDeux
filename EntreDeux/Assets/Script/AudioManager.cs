@@ -2,7 +2,9 @@ using System;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
+using static Unity.VisualScripting.Member;
 
 public class AudioManager : MonoBehaviour
 {
@@ -11,6 +13,8 @@ public class AudioManager : MonoBehaviour
     public float mainVolume = 1.0f;
     public float stVolume = 1.0f;
     public float sfxVolume = 1.0f;
+    public float clockTimer = 1.0f;
+    float delta = 0.0f;
 
     [SerializeField] GameObject soundtrackObject;
     [SerializeField] GameObject sfxObject;
@@ -18,7 +22,7 @@ public class AudioManager : MonoBehaviour
     [SerializeField] AudioSource soundtrackAudioSource;
     [SerializeField] List<AudioSource> sfxAudioSources;
     [SerializeField] List<AudioClip> soundtrackClips;
-    [SerializeField] List<AudioClip> sfxClips;
+    [SerializeField] Dictionary<string, AudioResource> soundEffects;
 
     void Awake()
     {
@@ -39,13 +43,6 @@ public class AudioManager : MonoBehaviour
         if (soundtrackObject)
         {
             soundtrackAudioSource = soundtrackObject.AddComponent<AudioSource>();
-        }
-        if (sfxObject)
-        {
-            for (int i = 0; i < 5; i++)
-            {
-                sfxAudioSources.Add(sfxObject.AddComponent<AudioSource>());
-            }
         }
 
         Scene scene = SceneManager.GetActiveScene();
@@ -102,7 +99,7 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    void StopAllSounds()
+    public void StopAllSounds()
     {
         if (soundtrackAudioSource != null)
         {
@@ -114,6 +111,38 @@ public class AudioManager : MonoBehaviour
         }
     }
 
+    public void PlaySound(string sound)
+    {
+        if (!sfxObject)
+        {
+            return;
+        }
+
+        if (soundEffects.ContainsKey(sound))
+        {
+            bool hasSound = false;
+
+            foreach(AudioSource audio in sfxAudioSources)
+            {
+                if (audio.resource == soundEffects[sound])
+                {
+                    audio.volume = 0.5f * mainVolume * sfxVolume;
+                    audio.Play();
+                    hasSound = true;
+                }
+            }
+
+            if (!hasSound)
+            {
+                AudioSource source = sfxObject.AddComponent<AudioSource>();
+                sfxAudioSources.Add(source);
+                source.resource = soundEffects[sound];
+                source.volume = 0.5f * mainVolume * sfxVolume;
+                source.Play();
+            }
+        }
+    }
+
     void OnDestroy()
     {
         SceneManager.activeSceneChanged -= ChangeScene;
@@ -122,6 +151,20 @@ public class AudioManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        delta += Time.deltaTime;
+
+        //if ()
+
+        if (sfxObject != null)
+        {
+            for (int i = sfxAudioSources.Count - 1; i >= 0; i--)
+            {
+                if (!sfxAudioSources[i].isPlaying)
+                {
+                    Destroy(sfxAudioSources[i]);
+                    sfxAudioSources.RemoveAt(i);
+                }
+            }
+        }
     }
 }
