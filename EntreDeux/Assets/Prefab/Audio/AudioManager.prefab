@@ -80,6 +80,7 @@ MonoBehaviour:
   mainVolume: 1
   stVolume: 1
   sfxVolume: 1
+  clockTimer: 1
   soundtrackObject: {fileID: 2857210392016312866}
   sfxObject: {fileID: 1528896597152697620}
   soundtrackAudioSource: {fileID: 0}
@@ -92,6 +93,8 @@ MonoBehaviour:
   soundEffects:
   - key: memory
     value: {fileID: 6418180475301049370, guid: b6b46aa8f1729d143a3088754fb01a4c, type: 2}
+  - key: pills
+    value: {fileID: 8300000, guid: 8e8818f9215ec8b4eb0ad9af079686a7, type: 3}
 --- !u!1 &2857210392016312866
 GameObject:
   m_ObjectHideFlags: 0

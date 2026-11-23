@@ -34,6 +34,12 @@ public class HealCollectibleBehavior : MonoBehaviour
             //getComponent that handles the hp of the player and increase them
             ///uncomment this and either make a fct to heal the player or adjust the hp directly
             ///collision.gameObject.GetComponent<Player>().Heal(healAmount);
+
+            if (AudioManager.instance != null)
+            {
+                AudioManager.instance.PlaySound("pills");
+            }
+
             Destroy(this.gameObject);
         }
         //Debug.Log("Fumble");
