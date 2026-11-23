@@ -111,20 +111,20 @@ public class PlatformMove : MonoBehaviour
     }
 
 
-    private void OnDrawGizmos()
-    {
-        if (points.Count > 0)
-        {
-            for (int i = 0; i < points.Count; i++)
-            {
-                Gizmos.color = Color.red;
-                Gizmos.DrawSphere(points[i].position, 0.1f);
-                if (i < points.Count - 1)
-                {
-                    Gizmos.color = Color.green;
-                    Gizmos.DrawLine(points[i].position, points[i + 1].position);
-                }
-            }
-        }
-    }
+    //private void OnDrawGizmos()
+    //{
+    //    if (points != null && points.Count > 0)
+    //    {
+    //        for (int i = 0; i < points.Count; i++)
+    //        {
+    //            Gizmos.color = Color.red;
+    //            Gizmos.DrawSphere(points[i].position, 0.1f);
+    //            if (i < points.Count - 1)
+    //            {
+    //                Gizmos.color = Color.green;
+    //                Gizmos.DrawLine(points[i].position, points[i + 1].position);
+    //            }
+    //        }
+    //    }
+    //}
 }
