@@ -38,14 +38,13 @@ public class MemoryCollectibleBehavior : MonoBehaviour
     [SerializeField] private float arrivalDistance = 0.15f;
 
     //////////////////////////////////////////////////////////////////////////////////////////
-    [Tooltip("Empty if the memory hasn't been collected")]
-    [HideInInspector]
-    public Player playerRef;
+    //[Tooltip("Empty if the memory hasn't been collected")]
+    //[HideInInspector]
+    //public Player playerRef;
 
-    //animation variables
-    private float timer = 0f;
-    private Vector3 startPosition;
-    private Vector3 endPosition;
+    ////animation variables
+    //private Vector3 startPosition;
+    //private Vector3 endPosition;
     //////////////////////////////////////////////////////////////////////////////////////////
 
     private State state = State.Idle;
@@ -63,8 +62,8 @@ public class MemoryCollectibleBehavior : MonoBehaviour
 
     void Start()
     {
-        startPosition = transform.position;
-        endPosition = new Vector3(startPosition.x, startPosition.y + 1, startPosition.z);
+        //startPosition = transform.position;
+        //endPosition = new Vector3(startPosition.x, startPosition.y + 1, startPosition.z);
         seed = Random.value * 100f;
         startZ = transform.position.z;
         basePosition = transform.position;

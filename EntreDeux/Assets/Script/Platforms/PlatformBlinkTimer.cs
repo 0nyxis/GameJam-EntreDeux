@@ -64,6 +64,6 @@ public class PlatformTimer : MonoBehaviour
 
         yield return new WaitForSeconds(animationTime);
 
-        StartCoroutine(Wait(invisibleTime - animationTime, Dispawn()));
+        StartCoroutine(Wait(visibleTime - animationTime, Dispawn()));
     }
 }

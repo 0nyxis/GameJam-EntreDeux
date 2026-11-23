@@ -41,7 +41,6 @@ public class Player : MonoBehaviour
 
 
     private bool isJumping;
-    private bool jumpQueued;
     private bool jumpReleased;
     private float jumpHoldCounter;
 
@@ -165,8 +164,6 @@ public class Player : MonoBehaviour
 
             jumpBufferCounter = 0;
         }
-
-        jumpQueued = false;
 
         // The player release the jump button -> Stop the "ascension" of the jump
         if (jumpReleased)

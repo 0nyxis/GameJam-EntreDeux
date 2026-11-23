@@ -1,7 +1,5 @@
 using System.Collections;
 using UnityEngine;
-using UnityEngine.UIElements;
-
 
 public class PlatformBlink : MonoBehaviour
 {
@@ -12,8 +10,6 @@ public class PlatformBlink : MonoBehaviour
     private Collider2D collider2D;
     private SpriteRenderer renderer;
     private bool wait = false;
-    private bool dispawn = true;
-
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
