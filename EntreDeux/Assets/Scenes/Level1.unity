@@ -171,6 +171,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ames_Spritesheet_Second_Plan_0 (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 3962723208418165059, guid: cd62c9ab63a8e5041bce54bdcb9ff343, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -248,7 +252,7 @@ GameObject:
   m_Component:
   - component: {fileID: 30791370}
   - component: {fileID: 30791371}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Fleur_1_0 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1103,7 +1107,7 @@ GameObject:
   m_Component:
   - component: {fileID: 122612486}
   - component: {fileID: 122612487}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Fleur_2_0 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1298,7 +1302,7 @@ GameObject:
   m_Component:
   - component: {fileID: 153978191}
   - component: {fileID: 153978190}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Fleur_1_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1610,6 +1614,10 @@ PrefabInstance:
       propertyPath: 'points.Array.data[1]'
       value: 
       objectReference: {fileID: 1790166053}
+    - target: {fileID: 6585371861437806991, guid: 13048a8a2b63ac24c8ab9dcd7afcb114, type: 3}
+      propertyPath: playerLayerMask.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
     - target: {fileID: 7741683178150189468, guid: 13048a8a2b63ac24c8ab9dcd7afcb114, type: 3}
       propertyPath: m_Name
       value: Platform_1_0move (1)
@@ -1740,7 +1748,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1144592474944838914, guid: c45dd24bd348a7949956f40fbd1e8899, type: 3}
       propertyPath: m_CullingMask.m_Bits
-      value: 72
+      value: 584
       objectReference: {fileID: 0}
     - target: {fileID: 2497870810731110565, guid: c45dd24bd348a7949956f40fbd1e8899, type: 3}
       propertyPath: m_Name
@@ -1776,11 +1784,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5073442573016129559, guid: c45dd24bd348a7949956f40fbd1e8899, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.6
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5073442573016129559, guid: c45dd24bd348a7949956f40fbd1e8899, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.9
+      value: -1.4
       objectReference: {fileID: 0}
     - target: {fileID: 5073442573016129559, guid: c45dd24bd348a7949956f40fbd1e8899, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1981,7 +1989,7 @@ GameObject:
   m_Component:
   - component: {fileID: 223170589}
   - component: {fileID: 223170588}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Fleur_1_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2193,6 +2201,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ames_Spritesheet_Second_Plan_0 (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 3962723208418165059, guid: cd62c9ab63a8e5041bce54bdcb9ff343, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2258,6 +2270,10 @@ PrefabInstance:
       propertyPath: 'points.Array.data[1]'
       value: 
       objectReference: {fileID: 916947219}
+    - target: {fileID: 6585371861437806991, guid: 13048a8a2b63ac24c8ab9dcd7afcb114, type: 3}
+      propertyPath: playerLayerMask.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
     - target: {fileID: 7741683178150189468, guid: 13048a8a2b63ac24c8ab9dcd7afcb114, type: 3}
       propertyPath: m_Name
       value: Platform_1_0move
@@ -2324,6 +2340,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lanterne_0 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1643037182568638942, guid: ec1c1145bb920d94da59710b4cd7851c, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2385,6 +2405,10 @@ PrefabInstance:
     - target: {fileID: 3962723208418165059, guid: cd62c9ab63a8e5041bce54bdcb9ff343, type: 3}
       propertyPath: m_Name
       value: Ames_Spritesheet_Second_Plan_0 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962723208418165059, guid: cd62c9ab63a8e5041bce54bdcb9ff343, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2711,7 +2735,7 @@ GameObject:
   m_Component:
   - component: {fileID: 333850710}
   - component: {fileID: 333850709}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Fleur_1_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2912,6 +2936,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ames_Spritesheet_Second_Plan_0 (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 3962723208418165059, guid: cd62c9ab63a8e5041bce54bdcb9ff343, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2977,6 +3005,10 @@ PrefabInstance:
       propertyPath: 'points.Array.data[1]'
       value: 
       objectReference: {fileID: 1723193281}
+    - target: {fileID: 6585371861437806991, guid: 13048a8a2b63ac24c8ab9dcd7afcb114, type: 3}
+      propertyPath: playerLayerMask.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
     - target: {fileID: 7741683178150189468, guid: 13048a8a2b63ac24c8ab9dcd7afcb114, type: 3}
       propertyPath: m_Name
       value: Platform_1_0move
@@ -3186,6 +3218,10 @@ PrefabInstance:
     - target: {fileID: 3962723208418165059, guid: cd62c9ab63a8e5041bce54bdcb9ff343, type: 3}
       propertyPath: m_Name
       value: Ames_Spritesheet_Second_Plan_0 (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962723208418165059, guid: cd62c9ab63a8e5041bce54bdcb9ff343, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3532,7 +3568,7 @@ GameObject:
   m_Component:
   - component: {fileID: 487667036}
   - component: {fileID: 487667037}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Fleur_1_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3929,6 +3965,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ames_Spritesheet_Second_Plan_0 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 3962723208418165059, guid: cd62c9ab63a8e5041bce54bdcb9ff343, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3944,7 +3984,7 @@ GameObject:
   m_Component:
   - component: {fileID: 543911038}
   - component: {fileID: 543911039}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Fleur_1_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4742,6 +4782,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lanterne_0 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1643037182568638942, guid: ec1c1145bb920d94da59710b4cd7851c, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5327,6 +5371,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lanterne_0 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 1643037182568638942, guid: ec1c1145bb920d94da59710b4cd7851c, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5687,6 +5735,10 @@ PrefabInstance:
     - target: {fileID: 3962723208418165059, guid: cd62c9ab63a8e5041bce54bdcb9ff343, type: 3}
       propertyPath: m_Name
       value: Ames_Spritesheet_Second_Plan_0 (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962723208418165059, guid: cd62c9ab63a8e5041bce54bdcb9ff343, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6372,6 +6424,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ames_Spritesheet_Second_Plan_0 (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 3962723208418165059, guid: cd62c9ab63a8e5041bce54bdcb9ff343, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6825,6 +6881,10 @@ PrefabInstance:
     - target: {fileID: 3962723208418165059, guid: cd62c9ab63a8e5041bce54bdcb9ff343, type: 3}
       propertyPath: m_Name
       value: Ames_Spritesheet_Second_Plan_0 (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962723208418165059, guid: cd62c9ab63a8e5041bce54bdcb9ff343, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7310,6 +7370,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lanterne_0 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 1643037182568638942, guid: ec1c1145bb920d94da59710b4cd7851c, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7406,6 +7470,10 @@ PrefabInstance:
     - target: {fileID: 1615175753808221271, guid: 98531a6bc7e396048b8cd327b64afdd2, type: 3}
       propertyPath: m_Name
       value: Hospital_Bed_0 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1615175753808221271, guid: 98531a6bc7e396048b8cd327b64afdd2, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 5316665009297196135, guid: 98531a6bc7e396048b8cd327b64afdd2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7544,6 +7612,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ames_Spritesheet_Second_Plan_0 (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 3962723208418165059, guid: cd62c9ab63a8e5041bce54bdcb9ff343, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7666,6 +7738,10 @@ PrefabInstance:
     - target: {fileID: 3962723208418165059, guid: cd62c9ab63a8e5041bce54bdcb9ff343, type: 3}
       propertyPath: m_Name
       value: Ames_Spritesheet_Second_Plan_0 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962723208418165059, guid: cd62c9ab63a8e5041bce54bdcb9ff343, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7858,6 +7934,10 @@ PrefabInstance:
     - target: {fileID: 1615175753808221271, guid: 98531a6bc7e396048b8cd327b64afdd2, type: 3}
       propertyPath: m_Name
       value: Hospital_Bed_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1615175753808221271, guid: 98531a6bc7e396048b8cd327b64afdd2, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 5316665009297196135, guid: 98531a6bc7e396048b8cd327b64afdd2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8266,6 +8346,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ames_Spritesheet_Second_Plan_0 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 3962723208418165059, guid: cd62c9ab63a8e5041bce54bdcb9ff343, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8523,7 +8607,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1022594703}
   - component: {fileID: 1022594702}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Fleur_1_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8797,6 +8881,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ames_Spritesheet_Second_Plan_0 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 3962723208418165059, guid: cd62c9ab63a8e5041bce54bdcb9ff343, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8858,6 +8946,10 @@ PrefabInstance:
     - target: {fileID: 3962723208418165059, guid: cd62c9ab63a8e5041bce54bdcb9ff343, type: 3}
       propertyPath: m_Name
       value: Ames_Spritesheet_Second_Plan_0 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962723208418165059, guid: cd62c9ab63a8e5041bce54bdcb9ff343, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9017,6 +9109,10 @@ PrefabInstance:
       propertyPath: 'points.Array.data[1]'
       value: 
       objectReference: {fileID: 1737298114}
+    - target: {fileID: 6585371861437806991, guid: 13048a8a2b63ac24c8ab9dcd7afcb114, type: 3}
+      propertyPath: playerLayerMask.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
     - target: {fileID: 7741683178150189468, guid: 13048a8a2b63ac24c8ab9dcd7afcb114, type: 3}
       propertyPath: m_Name
       value: Platform_1_0move
@@ -9041,7 +9137,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1111950167}
   - component: {fileID: 1111950168}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Fleur_1_0 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9316,6 +9412,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ames_Spritesheet_Second_Plan_0 (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 3962723208418165059, guid: cd62c9ab63a8e5041bce54bdcb9ff343, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9363,6 +9463,10 @@ PrefabInstance:
     - target: {fileID: 1615175753808221271, guid: 98531a6bc7e396048b8cd327b64afdd2, type: 3}
       propertyPath: m_Name
       value: Hospital_Bed_0 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1615175753808221271, guid: 98531a6bc7e396048b8cd327b64afdd2, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 5316665009297196135, guid: 98531a6bc7e396048b8cd327b64afdd2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9614,7 +9718,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1159202461}
   - component: {fileID: 1159202462}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Fleur_1_0 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10324,6 +10428,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ames_Spritesheet_Second_Plan_0 (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 3962723208418165059, guid: cd62c9ab63a8e5041bce54bdcb9ff343, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10381,6 +10489,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ames_Spritesheet_Second_Plan_0 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 3962723208418165059, guid: cd62c9ab63a8e5041bce54bdcb9ff343, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10437,6 +10549,10 @@ PrefabInstance:
     - target: {fileID: 3962723208418165059, guid: cd62c9ab63a8e5041bce54bdcb9ff343, type: 3}
       propertyPath: m_Name
       value: Ames_Spritesheet_Second_Plan_0 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962723208418165059, guid: cd62c9ab63a8e5041bce54bdcb9ff343, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11013,6 +11129,10 @@ PrefabInstance:
       propertyPath: 'points.Array.data[1]'
       value: 
       objectReference: {fileID: 1459648472}
+    - target: {fileID: 6585371861437806991, guid: 13048a8a2b63ac24c8ab9dcd7afcb114, type: 3}
+      propertyPath: playerLayerMask.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
     - target: {fileID: 7741683178150189468, guid: 13048a8a2b63ac24c8ab9dcd7afcb114, type: 3}
       propertyPath: m_Name
       value: Platform_1_0move (1)
@@ -11037,7 +11157,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1345135257}
   - component: {fileID: 1345135258}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Fleur_1_0 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11272,6 +11392,10 @@ PrefabInstance:
       propertyPath: 'points.Array.data[1]'
       value: 
       objectReference: {fileID: 304890662}
+    - target: {fileID: 6585371861437806991, guid: 13048a8a2b63ac24c8ab9dcd7afcb114, type: 3}
+      propertyPath: playerLayerMask.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
     - target: {fileID: 7741683178150189468, guid: 13048a8a2b63ac24c8ab9dcd7afcb114, type: 3}
       propertyPath: m_Name
       value: Platform_1_0move
@@ -11462,6 +11586,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ames_Spritesheet_Second_Plan_0 (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 3962723208418165059, guid: cd62c9ab63a8e5041bce54bdcb9ff343, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11477,7 +11605,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1396318960}
   - component: {fileID: 1396318959}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Fleur_2_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12270,7 +12398,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1461255151}
   - component: {fileID: 1461255152}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Fleur_1_0 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12403,6 +12531,10 @@ PrefabInstance:
     - target: {fileID: 1643037182568638942, guid: ec1c1145bb920d94da59710b4cd7851c, type: 3}
       propertyPath: m_Name
       value: Lanterne_0 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1643037182568638942, guid: ec1c1145bb920d94da59710b4cd7851c, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13095,6 +13227,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ames_Spritesheet_Second_Plan_0 (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 3962723208418165059, guid: cd62c9ab63a8e5041bce54bdcb9ff343, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13353,6 +13489,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ames_Spritesheet_Second_Plan_0 (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 3962723208418165059, guid: cd62c9ab63a8e5041bce54bdcb9ff343, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13538,7 +13678,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1615868278}
   - component: {fileID: 1615868279}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Fleur_2_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13672,6 +13812,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ames_Spritesheet_Second_Plan_0 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 3962723208418165059, guid: cd62c9ab63a8e5041bce54bdcb9ff343, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13791,6 +13935,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lanterne_0 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 1643037182568638942, guid: ec1c1145bb920d94da59710b4cd7851c, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13853,6 +14001,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ames_Spritesheet_Second_Plan_0 (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 3962723208418165059, guid: cd62c9ab63a8e5041bce54bdcb9ff343, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13909,6 +14061,10 @@ PrefabInstance:
     - target: {fileID: 3962723208418165059, guid: cd62c9ab63a8e5041bce54bdcb9ff343, type: 3}
       propertyPath: m_Name
       value: Ames_Spritesheet_Second_Plan_0 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962723208418165059, guid: cd62c9ab63a8e5041bce54bdcb9ff343, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13971,6 +14127,10 @@ PrefabInstance:
     - target: {fileID: 3962723208418165059, guid: cd62c9ab63a8e5041bce54bdcb9ff343, type: 3}
       propertyPath: m_Name
       value: Ames_Spritesheet_Second_Plan_0 (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962723208418165059, guid: cd62c9ab63a8e5041bce54bdcb9ff343, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14059,6 +14219,10 @@ PrefabInstance:
     - target: {fileID: 3962723208418165059, guid: cd62c9ab63a8e5041bce54bdcb9ff343, type: 3}
       propertyPath: m_Name
       value: Ames_Spritesheet_Second_Plan_0 (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962723208418165059, guid: cd62c9ab63a8e5041bce54bdcb9ff343, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14621,7 +14785,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1703518605}
   - component: {fileID: 1703518606}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Fleur_1_0 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15226,6 +15390,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lanterne_0 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1643037182568638942, guid: ec1c1145bb920d94da59710b4cd7851c, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15524,6 +15692,10 @@ PrefabInstance:
     - target: {fileID: 3962723208418165059, guid: cd62c9ab63a8e5041bce54bdcb9ff343, type: 3}
       propertyPath: m_Name
       value: Ames_Spritesheet_Second_Plan_0 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962723208418165059, guid: cd62c9ab63a8e5041bce54bdcb9ff343, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16314,6 +16486,10 @@ PrefabInstance:
     - target: {fileID: 1643037182568638942, guid: ec1c1145bb920d94da59710b4cd7851c, type: 3}
       propertyPath: m_Name
       value: Lanterne_0 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1643037182568638942, guid: ec1c1145bb920d94da59710b4cd7851c, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17212,6 +17388,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ames_Spritesheet_Second_Plan_0 (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 3962723208418165059, guid: cd62c9ab63a8e5041bce54bdcb9ff343, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17438,6 +17618,10 @@ PrefabInstance:
     - target: {fileID: 3962723208418165059, guid: cd62c9ab63a8e5041bce54bdcb9ff343, type: 3}
       propertyPath: m_Name
       value: Ames_Spritesheet_Second_Plan_0 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962723208418165059, guid: cd62c9ab63a8e5041bce54bdcb9ff343, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18149,6 +18333,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ames_Spritesheet_Second_Plan_0 (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 3962723208418165059, guid: cd62c9ab63a8e5041bce54bdcb9ff343, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18484,6 +18672,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ames_Spritesheet_Second_Plan_0 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3962723208418165059, guid: cd62c9ab63a8e5041bce54bdcb9ff343, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18730,6 +18922,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ames_Spritesheet_Second_Plan_0 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 3962723208418165059, guid: cd62c9ab63a8e5041bce54bdcb9ff343, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18786,6 +18982,10 @@ PrefabInstance:
     - target: {fileID: 3962723208418165059, guid: cd62c9ab63a8e5041bce54bdcb9ff343, type: 3}
       propertyPath: m_Name
       value: Ames_Spritesheet_Second_Plan_0 (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962723208418165059, guid: cd62c9ab63a8e5041bce54bdcb9ff343, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18940,6 +19140,10 @@ PrefabInstance:
       propertyPath: 'points.Array.data[1]'
       value: 
       objectReference: {fileID: 1327470716}
+    - target: {fileID: 6585371861437806991, guid: 13048a8a2b63ac24c8ab9dcd7afcb114, type: 3}
+      propertyPath: playerLayerMask.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
     - target: {fileID: 7741683178150189468, guid: 13048a8a2b63ac24c8ab9dcd7afcb114, type: 3}
       propertyPath: m_Name
       value: Platform_1_0move
@@ -19027,6 +19231,10 @@ PrefabInstance:
     - target: {fileID: 1615175753808221271, guid: 98531a6bc7e396048b8cd327b64afdd2, type: 3}
       propertyPath: m_Name
       value: Hospital_Bed_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1615175753808221271, guid: 98531a6bc7e396048b8cd327b64afdd2, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 5316665009297196135, guid: 98531a6bc7e396048b8cd327b64afdd2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -19198,6 +19406,10 @@ PrefabInstance:
     - target: {fileID: 3962723208418165059, guid: cd62c9ab63a8e5041bce54bdcb9ff343, type: 3}
       propertyPath: m_Name
       value: Ames_Spritesheet_Second_Plan_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962723208418165059, guid: cd62c9ab63a8e5041bce54bdcb9ff343, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
