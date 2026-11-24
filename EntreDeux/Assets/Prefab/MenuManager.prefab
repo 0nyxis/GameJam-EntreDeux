@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 9059294054431119546}
   - component: {fileID: 8813498093177484729}
   - component: {fileID: 3948804213505402800}
+  - component: {fileID: 7398073108608302163}
   m_Layer: 0
   m_Name: MenuManager
   m_TagString: Untagged
@@ -46,6 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MainMenuManager
   creditsManager: {fileID: 0}
+  settingsManager: {fileID: 0}
 --- !u!114 &3948804213505402800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58,4 +60,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fed2bf2adbb9c94b89ad69448355d7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CreditsManager
+  nextButton: {fileID: 0}
+  previousButton: {fileID: 0}
+  page1: []
+  page2: []
+  canvas: {fileID: 0}
+--- !u!114 &7398073108608302163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1804718127100458982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 410cd832f0918b841a3a0b8404b699fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SettingsManager
   canvas: {fileID: 0}
