@@ -61,6 +61,8 @@ public class Player : MonoBehaviour
     private int lifePoint = 100;
     private List<MemoryCollectibleBehavior> memories = new List<MemoryCollectibleBehavior>();
 
+    [SerializeField] public Thermometre currentThermometre;
+
     ////////////////////////////////////////////////////////////////////////////
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -107,7 +109,14 @@ public class Player : MonoBehaviour
         }
         if (ia_Interact.WasReleasedThisFrame() && interactScript._canInteract)
         {
-            StartCoroutine(interactScript.Boom(Camera.main.WorldToViewportPoint(transform.position)));
+            if (currentThermometre != null && !currentThermometre.IsActivated)
+            {
+                currentThermometre.Activate();
+            }
+
+            Vector2 worldPos = transform.position;
+            Vector2 viewportPos = Camera.main.WorldToViewportPoint(worldPos);
+            StartCoroutine(interactScript.Boom(worldPos, viewportPos));
         }
     }
 
