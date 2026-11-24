@@ -4,8 +4,10 @@ using UnityEngine;
 public class PlatformBlink : MonoBehaviour
 {
     [SerializeField] private LayerMask playerLayerMask;
-    [SerializeField] private float timeBeforeColliderOff = 1f;
-    [SerializeField] private float timeBeforeColliderOn = 5f;
+    [Range(0.5f,5f)]
+    [SerializeField] private float timerOn = 5f;
+    [Range(0.5f, 5f)]
+    [SerializeField] private float timerOff = 1f;
 
     private Collider2D collider2D;
     private SpriteRenderer renderer;
@@ -23,7 +25,7 @@ public class PlatformBlink : MonoBehaviour
     {
         if (!wait && collider2D.IsTouchingLayers(playerLayerMask))
         {
-            StartCoroutine(Wait(timeBeforeColliderOff, Dispawn()));
+            StartCoroutine(Wait(timerOn, Dispawn()));
         }
     }
 
@@ -36,47 +38,22 @@ public class PlatformBlink : MonoBehaviour
         StartCoroutine(_function);
     }
 
-    private IEnumerator Wait(float _secondToWait)
-    {
-        wait = true;
-
-        yield return new WaitForSeconds(_secondToWait);
-
-        wait = false;
-    }
-
     private IEnumerator Dispawn()
     {
         collider2D.enabled = false;
-
-        int disparition = 0;
-
-        while (disparition < 100)
-        {
-            disparition++;
-            Debug.Log(disparition.ToString());
-            yield return null;
-        }
-
         renderer.enabled = false;
 
-        StartCoroutine(Wait(timeBeforeColliderOn, Respawn()));
+        yield return new WaitForSeconds(0.3f);
+
+        StartCoroutine(Wait(timerOff - 0.3f, Respawn()));
     }
 
     private IEnumerator Respawn()
     {
         renderer.enabled = true;
-
-        int apparition = 0;
-
-        while (apparition < 100)
-        {
-            apparition++;
-            Debug.Log(apparition.ToString());
-            yield return null;
-        }
-
         collider2D.enabled = true;
+
+        yield return new WaitForSeconds(0.3f);
 
         wait = false;
     }
