@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Rendering.Universal;
 
 public class Player : MonoBehaviour
 {
@@ -58,7 +59,9 @@ public class Player : MonoBehaviour
 
     private Rigidbody2D rb;
     private Interact interactScript;
-    private int lifePoint = 100;
+    private Light2D light2D;
+    [SerializeField] private float lifePoint = 100;
+    [Range(0.01f, 0.1f)][SerializeField] private float lifeLossMultiplier = 0.01f;
     private List<MemoryCollectibleBehavior> memories = new List<MemoryCollectibleBehavior>();
 
     [SerializeField] public Thermometre currentThermometre;
@@ -69,6 +72,7 @@ public class Player : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        light2D = GetComponentInChildren<Light2D>();
         interactScript = transform.AddComponent<Interact>();
         ia_Move = InputSystem.actions.FindAction("Move");
         ia_Jump = InputSystem.actions.FindAction("Jump");
@@ -88,6 +92,16 @@ public class Player : MonoBehaviour
         {
             GameManager.Instance.PlayerDead();
         }
+        else
+        {
+            float MinimumIntensity = 6f;
+            float MinimumOuterRadius = 6f;
+
+            lifePoint -= Time.fixedDeltaTime * lifeLossMultiplier;
+            light2D.intensity = (float)((MinimumIntensity / 100f) * (float)lifePoint);
+            light2D.pointLightOuterRadius = MinimumOuterRadius + ((3f / 10f) * ((float)lifePoint / 10f));
+        }
+
         if (ia_Jump.WasPressedThisFrame())
         {
             jumpBufferCounter = jumpBufferTime;
@@ -129,10 +143,14 @@ public class Player : MonoBehaviour
             coyoteTimeCounter = coyoteTime;
         }
         else
+        {
             coyoteTimeCounter -= Time.fixedDeltaTime;
+        }
 
         if (jumpBufferCounter > 0)
+        {
             jumpBufferCounter -= Time.fixedDeltaTime;
+        }
 
         HandleMovement();
         HandleJump();
