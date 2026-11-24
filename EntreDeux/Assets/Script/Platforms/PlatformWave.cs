@@ -8,6 +8,8 @@ public class PlatformWave : MonoBehaviour
 {
     public static readonly List<PlatformWave> All = new List<PlatformWave>();
 
+    [SerializeField] private SpriteRenderer platformBody;
+
     [Tooltip("SpriteRenderer enfant (même sprite que la plateforme) avec le matériau d'overlay.")]
     [SerializeField] private SpriteRenderer overlay;
 
@@ -15,6 +17,8 @@ public class PlatformWave : MonoBehaviour
     [SerializeField] private float holdDuration = 1.5f;
     [SerializeField] private float fadeDuration = 0.6f;
 
+    [Range(0f, 1f)]
+    [SerializeField] private float residualOutlineAlpha = 0.5f;
     public UnityEvent onWaveHit;
 
     private static readonly int RevealId = Shader.PropertyToID("_Reveal");
@@ -28,12 +32,11 @@ public class PlatformWave : MonoBehaviour
     {
         col = GetComponent<Collider2D>();
         block = new MaterialPropertyBlock();
+
         SetValues(0f, 0f);
 
-        if (overlay != null) 
-        {
-            overlay.enabled = false; 
-        }
+        if (overlay != null) overlay.enabled = false;
+        if (platformBody != null) platformBody.enabled = false;
     }
 
     private void OnEnable() 
@@ -70,26 +73,39 @@ public class PlatformWave : MonoBehaviour
     private IEnumerator RevealRoutine()
     {
         overlay.enabled = true;
-
-        // Apparition de la ligne
+        if (platformBody != null) platformBody.enabled = true;
         for (float t = 0f; t < 1f; t += Time.deltaTime / revealDuration)
         {
             SetValues(t, 1f);
+            SetBodyAlpha(t);
             yield return null;
         }
+
         SetValues(1f, 1f);
+        SetBodyAlpha(1f);
 
         yield return new WaitForSeconds(holdDuration);
 
-        // Disparition en fondu
         for (float t = 0f; t < 1f; t += Time.deltaTime / fadeDuration)
         {
-            SetValues(1f, 1f - t);
+            float currentAlpha = Mathf.Lerp(1f, residualOutlineAlpha, t);
+            SetValues(1f, currentAlpha);
+            SetBodyAlpha(1f - t);
             yield return null;
         }
 
-        SetValues(0f, 0f);
-        overlay.enabled = false;
+        if (platformBody != null) platformBody.enabled = false;
+
+        if (residualOutlineAlpha > 0f)
+        {
+            SetValues(1f, residualOutlineAlpha);
+        }
+        else
+        {
+            SetValues(0f, 0f);
+            overlay.enabled = false;
+        }
+
         routine = null;
     }
 
@@ -100,5 +116,13 @@ public class PlatformWave : MonoBehaviour
         block.SetFloat(RevealId, reveal);
         block.SetFloat(AlphaId, alpha);
         overlay.SetPropertyBlock(block);
+    }
+
+    private void SetBodyAlpha(float alpha)
+    {
+        if (platformBody == null) return;
+        Color c = platformBody.color;
+        c.a = alpha;
+        platformBody.color = c;
     }
 }

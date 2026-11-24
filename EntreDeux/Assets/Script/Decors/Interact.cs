@@ -31,26 +31,28 @@ public class Interact : MonoBehaviour
         }
     }
 
-    public IEnumerator Boom(Vector2 _pos)
+    public IEnumerator Boom(Vector2 worldPos, Vector2 viewportPos)
     {
         canInteract = false;
         hitPlatforms.Clear();
-        leShaderGraph.SetVector(FocalPointId, _pos);
+        debugCenter = worldPos;
+
+        leShaderGraph.SetVector(FocalPointId, viewportPos);
 
         float t = 0f;
 
         while (t < 1f)
         {
             leShaderGraph.SetFloat(ProgressId, t);
-
-            debugCenter = _pos;
             debugRadius = t * maxWorldRadius;
-            CheckPlatforms(_pos, debugRadius);
+
+            CheckPlatforms(worldPos, debugRadius);
 
             t += Time.deltaTime / duration;
             yield return null;
         }
 
+        leShaderGraph.SetFloat(ProgressId, 1f);
         canInteract = true;
     }
 
@@ -62,7 +64,7 @@ public class Interact : MonoBehaviour
             PlatformWave p = platforms[i];
             if (hitPlatforms.Contains(p))
             {
-                continue; 
+                continue;
             }
 
             // Distance entre le centre de l'onde et le point le plus proche de la plateforme
@@ -76,11 +78,12 @@ public class Interact : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        if (!canInteract) 
+        if (canInteract)
         {
-            return; 
+            return;
         }
+
         Gizmos.color = Color.cyan;
-        Gizmos.DrawWireSphere( debugCenter, debugRadius);
+        Gizmos.DrawWireSphere(debugCenter, debugRadius);
     }
 }

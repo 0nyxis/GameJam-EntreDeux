@@ -1,30 +1,60 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Thermometre : MonoBehaviour
 {
-    float speed = 1f;
-    [SerializeField] public BoxCollider2D colliderTermo;
-    [SerializeField] public Transform spriteTermo;
+    [SerializeField] private float speed = 5f;
+    [SerializeField] private float maxWidth = 21.0216f;
+
+    [SerializeField] private SpriteRenderer spriteRendererTermo;
+    [SerializeField] private BoxCollider2D colliderTermo;
+
+    public bool IsActivated { get; private set; } = false;
+
+    public void Activate()
+    {
+        IsActivated = true;
+    }
 
     void Update()
     {
-        Vector3 size = colliderTermo.size;
-        Vector3 scale = spriteTermo.localScale;
+        if (!IsActivated) return;
 
-        if (scale.x < 35)
+        float currentWidth = spriteRendererTermo.size.x;
+
+        if (currentWidth < maxWidth)
         {
             float deltaSize = speed * Time.deltaTime;
+            if (currentWidth + deltaSize > maxWidth)
+            {
+                deltaSize = maxWidth - currentWidth;
+            }
 
-            size.x += deltaSize;
-            colliderTermo.size = size;
+            Vector2 newSize = spriteRendererTermo.size;
+            newSize.x += deltaSize;
+            spriteRendererTermo.size = newSize;
 
-            Vector2 offset = colliderTermo.offset;
-            offset.x += deltaSize / 2f;
-            colliderTermo.offset = offset;
+            Vector2 colSize = colliderTermo.size;
+            colSize.x += deltaSize;
+            colliderTermo.size = colSize;
 
-            scale.x += deltaSize;
-            spriteTermo.localScale = scale;
-            spriteTermo.localPosition += Vector3.right * (deltaSize / 2f);
+            spriteRendererTermo.transform.localPosition += new Vector3(deltaSize / 2f, 0f, 0f);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.TryGetComponent(out Player player))
+        {
+            player.currentThermometre = this;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.TryGetComponent(out Player player) && player.currentThermometre == this)
+        {
+            player.currentThermometre = null;
         }
     }
 }
