@@ -40,6 +40,7 @@ public class Player : MonoBehaviour
 
     private bool isJumping;
     private bool jumpReleased;
+    private bool startJump = false;
     private float jumpHoldCounter;
 
     [Header("Animation Data")]
@@ -88,6 +89,16 @@ public class Player : MonoBehaviour
         {
             jumpBufferCounter = jumpBufferTime;
             OnJumpPressed?.Invoke();
+
+            if (!startJump)
+            {
+                startJump = true;
+
+                if (AudioManager.instance != null)
+                {
+                    AudioManager.instance.PlaySound("jump");
+                }
+            }
         }
         if (ia_Jump.WasReleasedThisFrame())
         {
@@ -162,6 +173,8 @@ public class Player : MonoBehaviour
             }
             jumpReleased = false;
             coyoteTimeCounter = 0;
+
+            startJump = false;
         }
 
         // The player continue its ascension while he can, by holding the jump button

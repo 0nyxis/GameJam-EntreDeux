@@ -1791,7 +1791,7 @@ MonoBehaviour:
   texteUI: {fileID: 815753487}
   dialogue:
   - "It\u2019s so dark..."
-  - Where is my dad and my mom..?
+  - Where are my dad and my mom..?
   vitesse: 0.05
   tempEntreDialogue: 1.5
   onePlay: 1
@@ -7430,7 +7430,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
   texteUI: {fileID: 815753487}
   dialogue:
-  - I feel better taking these things !
+  - I feel better taking these things!
   vitesse: 0.05
   tempEntreDialogue: 1.5
   onePlay: 1
@@ -8539,7 +8539,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
   texteUI: {fileID: 815753487}
   dialogue:
-  - 'ohhh this memory ! '
+  - 'Ohhh this memory! '
   - 'Mom often made me pancakes! '
   vitesse: 0.05
   tempEntreDialogue: 1.5

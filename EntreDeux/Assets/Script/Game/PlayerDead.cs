@@ -8,7 +8,7 @@ public class PlayerDead : MonoBehaviour
     {
         if (((1 << collision.gameObject.layer) & targetLayerMask) != 0)
         {
-            collision.GetComponent<Player>().TakeDamage(100);
+            collision.GetComponent<Player>().TakeDamage(1000);
         }
     }
 }

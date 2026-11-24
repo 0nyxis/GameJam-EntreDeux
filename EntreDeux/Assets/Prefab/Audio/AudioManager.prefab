@@ -86,23 +86,23 @@ MonoBehaviour:
   soundtrackAudioSource: {fileID: 0}
   sfxAudioSources: []
   soundtrackClips:
-  - {fileID: 8300000, guid: b93a7916f70f19f44a1bf0d1c411bbac, type: 3}
-  - {fileID: 8300000, guid: dc98db4694267bf49817d7b0147da37e, type: 3}
-  - {fileID: 8300000, guid: a0e6e7b59f5c2584a8ceb277032b55e8, type: 3}
-  - {fileID: 8300000, guid: 66232eb2bfbac264985e9d294649fdf8, type: 3}
+  - {fileID: 8300000, guid: 95380042bbda3f642975b2e2ac8723fb, type: 3}
+  - {fileID: 8300000, guid: 24217866cd80d1e419ed5854c3c9b891, type: 3}
+  - {fileID: 8300000, guid: 6a37f4f1539883b41b7213c124306f3c, type: 3}
+  - {fileID: 8300000, guid: 448541d4bb29b86428578df3585f4e6e, type: 3}
   soundEffects:
   - key: memory
     value: {fileID: 6418180475301049370, guid: b6b46aa8f1729d143a3088754fb01a4c, type: 2}
   - key: pills
-    value: {fileID: 8300000, guid: 8e8818f9215ec8b4eb0ad9af079686a7, type: 3}
+    value: {fileID: 8300000, guid: ee7aae819d9129e4bbcedcba7fe20c9e, type: 3}
   - key: jump
-    value: {fileID: 8300000, guid: 4daa2ad876f32474283de98a0666f39d, type: 3}
+    value: {fileID: 8300000, guid: 2217f2945c940624fa8290fca3e5ed4b, type: 3}
   - key: jump_bed
-    value: {fileID: 8300000, guid: 72051f153d1656343a5a6788e76d857d, type: 3}
+    value: {fileID: 8300000, guid: 7bc1e55e2ebfcd24a817dc476f7bd20e, type: 3}
   - key: land
-    value: {fileID: 8300000, guid: 1076b7f4f580c4d40b545ee636f2b721, type: 3}
+    value: {fileID: 8300000, guid: a12ffb84307176042a9739630f9f92a5, type: 3}
   - key: rockfall
-    value: {fileID: 8300000, guid: 4bb86839d7b22af4bb16d806ce3a658a, type: 3}
+    value: {fileID: 8300000, guid: 2d1aa295f223fda4281ec17e3b9d1e1c, type: 3}
 --- !u!1 &2857210392016312866
 GameObject:
   m_ObjectHideFlags: 0

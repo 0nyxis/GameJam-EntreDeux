@@ -7,7 +7,7 @@ AudioContainerElement:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: child_laugh_memory_2_{-5933504372493148845}
-  m_AudioClip: {fileID: 8300000, guid: cc4823e20888e734d8b1c77d33c68313, type: 3}
+  m_AudioClip: {fileID: 8300000, guid: 260ac7e1c6617904588958bdbfabb971, type: 3}
   m_Volume: 0
   m_Enabled: 1
 --- !u!1233149941 &4815695532856148358
@@ -17,7 +17,7 @@ AudioContainerElement:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: child_laugh_memory_1_{4815695532856148358}
-  m_AudioClip: {fileID: 8300000, guid: 8ed7e614bd28a484a9f9e9a8bdc66a78, type: 3}
+  m_AudioClip: {fileID: 8300000, guid: 72d17c57cdc5b3d49b0801832b0ac319, type: 3}
   m_Volume: 0
   m_Enabled: 1
 --- !u!1307931743 &6418180475301049370
