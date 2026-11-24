@@ -143,12 +143,12 @@ TextureImporter:
       name: piliers_avantdernier_plan_0
       rect:
         serializedVersion: 2
-        x: 269
-        y: 121
-        width: 241
-        height: 929
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -161,99 +161,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: piliers_avantdernier_plan_1
-      rect:
-        serializedVersion: 2
-        x: 666
-        y: 163
-        width: 251
-        height: 884
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ca8655a70186ebf70800000000000000
-      internalID: 9204909108373055660
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: piliers_avantdernier_plan_2
-      rect:
-        serializedVersion: 2
-        x: 1004
-        y: 965
-        width: 8
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4f8fe81a557a48530800000000000000
-      internalID: 3856391167160547572
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: piliers_avantdernier_plan_3
-      rect:
-        serializedVersion: 2
-        x: 1008
-        y: 120
-        width: 410
-        height: 950
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b41cee5135239a220800000000000000
-      internalID: 2497582800785293643
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: piliers_avantdernier_plan_4
-      rect:
-        serializedVersion: 2
-        x: 1667
-        y: 102
-        width: 240
-        height: 949
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: eebf766c65c5c3020800000000000000
-      internalID: 2322833035581979630
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 12328c888cd744644ac6b8a3a5ed60ac
     internalID: 0
     vertices: []
     indices: 

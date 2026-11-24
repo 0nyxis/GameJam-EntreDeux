@@ -152,28 +152,6 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: chaines_troisieme_plan_0
-      rect:
-        serializedVersion: 2
-        x: 341
-        y: 1066
-        width: 19
-        height: 14
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 62bc86c1dde20eac0800000000000000
-      internalID: -3828008156065641690
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: chaines_troisieme_plan_5
       rect:
         serializedVersion: 2
