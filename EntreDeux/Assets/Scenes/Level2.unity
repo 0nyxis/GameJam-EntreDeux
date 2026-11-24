@@ -16284,7 +16284,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 339841563997366029, guid: c45dd24bd348a7949956f40fbd1e8899, type: 3}
       propertyPath: m_CullingMask.m_Bits
-      value: 447
+      value: 951
       objectReference: {fileID: 0}
     - target: {fileID: 602039491627638005, guid: c45dd24bd348a7949956f40fbd1e8899, type: 3}
       propertyPath: m_Layer
@@ -16292,7 +16292,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1144592474944838914, guid: c45dd24bd348a7949956f40fbd1e8899, type: 3}
       propertyPath: m_CullingMask.m_Bits
-      value: 576
+      value: 72
       objectReference: {fileID: 0}
     - target: {fileID: 2497870810731110565, guid: c45dd24bd348a7949956f40fbd1e8899, type: 3}
       propertyPath: m_Name
@@ -16312,11 +16312,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5073442573016129559, guid: c45dd24bd348a7949956f40fbd1e8899, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -21
+      value: -26.4
       objectReference: {fileID: 0}
     - target: {fileID: 5073442573016129559, guid: c45dd24bd348a7949956f40fbd1e8899, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.6
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 5073442573016129559, guid: c45dd24bd348a7949956f40fbd1e8899, type: 3}
       propertyPath: m_LocalPosition.z
