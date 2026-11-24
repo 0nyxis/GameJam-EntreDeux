@@ -5,16 +5,38 @@ using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
 using static Unity.VisualScripting.Member;
+using static UnityEditor.ShaderGraph.Internal.KeywordDependentCollection;
 
 public class AudioManager : MonoBehaviour
 {
     static public AudioManager instance;
 
+    //static public AudioManager Instance
+    //{
+    //    get
+    //    {
+    //        if (instance == null)
+    //        {
+    //            instance = FindAnyObjectByType<AudioManager>();
+    //        }
+    //        if (instance == null)
+    //        {
+    //            GameObject obj = new GameObject(typeof(AudioManager).Name);
+    //            instance = obj.AddComponent<AudioManager>();
+    //            instance.soundtrackObject = new GameObject("Soundtrack");
+    //            instance.soundtrackObject.transform.SetParent(obj.transform);
+    //            instance.sfxObject = new GameObject("Sfx");
+    //            instance.sfxObject.transform.SetParent(obj.transform);
+    //        }
+
+    //        return instance;
+    //    }
+    //}
+
     public float mainVolume = 1.0f;
     public float stVolume = 1.0f;
     public float sfxVolume = 1.0f;
     public float clockTimer = 1.0f;
-    float delta = 0.0f;
 
     [SerializeField] GameObject soundtrackObject;
     [SerializeField] GameObject sfxObject;
@@ -128,6 +150,7 @@ public class AudioManager : MonoBehaviour
 
         if (soundEffects.ContainsKey(sound))
         {
+            //TODO If enough time use the PlayOneShot() or the static function PlayAsPoint or something (forgot the name)
             bool hasSound = false;
 
             foreach(AudioSource audio in sfxAudioSources)
