@@ -119,7 +119,7 @@ public class MemoryCollectibleBehavior : MonoBehaviour
                 if (Vector2.Distance(basePosition, destination) <= arrivalDistance)
                 {
                     idleCenter = destination;
-                    HasArrived = true;          // ← ajouté
+                    HasArrived = true;
                     state = State.Idle;
                 }
                 return destination;

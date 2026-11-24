@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Threading.Tasks;
 using UnityEngine;
 
 public class PlatformTimer : MonoBehaviour
@@ -9,7 +8,7 @@ public class PlatformTimer : MonoBehaviour
     [SerializeField] private float firstDispawn = 3f;
 
     private float animationTime = 1f;
-    private bool started = false;
+    //private bool started = false;
 
 
     private Collider2D collider2D;
@@ -17,7 +16,7 @@ public class PlatformTimer : MonoBehaviour
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    async Task Start()
+    private void Start()
     {
         collider2D = GetComponent<Collider2D>();
         renderer = GetComponent<SpriteRenderer>();
@@ -26,7 +25,7 @@ public class PlatformTimer : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         //if (!started)
         //{

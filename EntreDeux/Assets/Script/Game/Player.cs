@@ -82,7 +82,7 @@ public class Player : MonoBehaviour
         mask.flipX = WasLastMoveRight;
         if (lifePoint <= 0)
         {
-            GameManager.PlayerDead();
+            GameManager.Instance.PlayerDead();
         }
         if (ia_Jump.WasPressedThisFrame())
         {
