@@ -51,6 +51,11 @@ public class PlatformDissolve : MonoBehaviour
 
         dissolving = true;
 
+        if (AudioManager.instance != null)
+        {
+            AudioManager.instance.PlaySound("rockfall");
+        }
+
         yield return new WaitForSeconds(timeForAnimation);
     }
 }

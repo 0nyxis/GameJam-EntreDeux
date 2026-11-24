@@ -143,6 +143,37 @@ public class AudioManager : MonoBehaviour
         }
     }
 
+    public void SetMainVolume(float volume)
+    {
+        mainVolume = Math.Clamp(volume, 0.0f, 1.0f);
+
+        UpdateVolume();
+    }
+
+    public void SetSoundtrackVolume(float volume)
+    {
+        stVolume = Math.Clamp(volume, 0.0f, 1.0f);
+
+        UpdateVolume();
+    }
+
+    public void SetSfxVolume(float volume)
+    {
+        sfxVolume = Math.Clamp(volume, 0.0f, 1.0f);
+
+        UpdateVolume();
+    }
+
+    public void UpdateVolume()
+    {
+        soundtrackAudioSource.volume = 0.5f * mainVolume * stVolume;
+
+        foreach (AudioSource audio in sfxAudioSources)
+        {
+            audio.volume = 0.5f * mainVolume * sfxVolume;
+        }
+    }
+
     void OnDestroy()
     {
         SceneManager.activeSceneChanged -= ChangeScene;

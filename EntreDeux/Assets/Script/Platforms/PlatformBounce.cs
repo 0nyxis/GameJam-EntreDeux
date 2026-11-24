@@ -23,5 +23,10 @@ public class PlatformBounce : MonoBehaviour
         if (playerRb.linearVelocity.y > 0.1f) return;
 
         playerRb.linearVelocity = new Vector2(playerRb.linearVelocity.x, bounceForce);
+
+        if (AudioManager.instance != null)
+        {
+            AudioManager.instance.PlaySound("jump_bed");
+        }
     }
 }
