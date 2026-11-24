@@ -52,7 +52,8 @@ public class Interact : MonoBehaviour
             yield return null;
         }
 
-        leShaderGraph.SetFloat(ProgressId, 1f);
+        leShaderGraph.SetFloat(ProgressId, 0f);
+        leShaderGraph.SetVector(FocalPointId, new Vector2(-10f, -10f));
         canInteract = true;
     }
 
