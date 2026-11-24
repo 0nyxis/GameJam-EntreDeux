@@ -41,6 +41,7 @@ public class Player : MonoBehaviour
     private bool isJumping;
     private bool jumpReleased;
     private bool startJump = false;
+    private bool isFalling = false;
     private float jumpHoldCounter;
 
     [Header("Animation Data")]
@@ -211,15 +212,40 @@ public class Player : MonoBehaviour
             return true;
         }
 
+        isFalling = true;
+
         return false;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        RaycastHit2D hitA = Physics2D.Raycast(groundCheckA.position, Vector2.down, groundCheckDist, groundLayer);
+        RaycastHit2D hitB = Physics2D.Raycast(groundCheckB.position, Vector2.down, groundCheckDist, groundLayer);
+
+        if (hitA.collider != null || hitB.collider != null)
+        {
+            if (isFalling)
+            {
+                isFalling = false;
+
+                if (AudioManager.instance != null)
+                {
+                    AudioManager.instance.PlaySound("land");
+                }
+            }
+        }
     }
 
     private void HandleGravity()
     {
         if (rb.linearVelocity.y < 0)
+        {
             rb.gravityScale = gravityScale * 1.5f;
+        }
         else
+        {
             rb.gravityScale = gravityScale;
+        }
     }
 
 

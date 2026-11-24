@@ -49,6 +49,14 @@ public class AudioManager : MonoBehaviour
 
         ChangeScene(scene, scene);
 
+        foreach(KeyValuePair<string, AudioResource> ressource in soundEffects)
+        {
+            AudioSource source = sfxObject.AddComponent<AudioSource>();
+            sfxAudioSources.Add(source);
+            source.resource = ressource.Value;
+            source.volume = 0.5f * mainVolume * sfxVolume;
+        }
+
         SceneManager.activeSceneChanged += ChangeScene;
     }
 
@@ -182,27 +190,27 @@ public class AudioManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        delta += Time.deltaTime;
-        
-        if (delta >= clockTimer)
-        {
-            delta = 0.0f;
-        }
-        else
-        {
-            return;
-        }
+        //delta += Time.deltaTime;
 
-        if (sfxObject != null)
-        {
-            for (int i = sfxAudioSources.Count - 1; i >= 0; i--)
-            {
-                if (!sfxAudioSources[i].isPlaying)
-                {
-                    Destroy(sfxAudioSources[i]);
-                    sfxAudioSources.RemoveAt(i);
-                }
-            }
-        }
+        //if (delta >= clockTimer)
+        //{
+        //    delta = 0.0f;
+        //}
+        //else
+        //{
+        //    return;
+        //}
+
+        //if (sfxObject != null)
+        //{
+        //    for (int i = sfxAudioSources.Count - 1; i >= 0; i--)
+        //    {
+        //        if (!sfxAudioSources[i].isPlaying)
+        //        {
+        //            Destroy(sfxAudioSources[i]);
+        //            sfxAudioSources.RemoveAt(i);
+        //        }
+        //    }
+        //}
     }
 }
