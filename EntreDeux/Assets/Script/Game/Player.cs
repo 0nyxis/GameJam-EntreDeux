@@ -61,7 +61,7 @@ public class Player : MonoBehaviour
     private Interact interactScript;
     private Light2D light2D;
     [SerializeField] private float lifePoint = 100;
-    [Range(0.01f, 0.1f)][SerializeField] private float lifeLossMultiplier = 0.01f;
+    [Range(0.01f, 0.4f)][SerializeField] private float lifeLossMultiplier = 0.4f;
     private List<MemoryCollectibleBehavior> memories = new List<MemoryCollectibleBehavior>();
 
     [SerializeField] public Thermometre currentThermometre;
@@ -294,6 +294,6 @@ public class Player : MonoBehaviour
     }
     public void Heal(int _heal)
     {
-        lifePoint += _heal;
+        lifePoint = (lifePoint + _heal > 100) ? 100 : lifePoint + _heal;
     }
 }
