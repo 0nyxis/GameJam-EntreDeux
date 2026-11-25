@@ -81,7 +81,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_MaskInteraction: 0
   m_Sprite: {fileID: -2583116678150735070, guid: 56b28a62f3b731748a9a9400f2a5b745, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -109,8 +109,8 @@ MonoBehaviour:
   playerLayerMask:
     serializedVersion: 2
     m_Bits: 64
-  timeBeforeColliderOff: 1
-  timeBeforeColliderOn: 5
+  timerOn: 5
+  timerOff: 1
 --- !u!61 &1661103643928647172
 BoxCollider2D:
   m_ObjectHideFlags: 0

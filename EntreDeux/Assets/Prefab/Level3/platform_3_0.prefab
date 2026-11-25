@@ -81,7 +81,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_MaskInteraction: 0
   m_Sprite: {fileID: -2583116678150735070, guid: e409979c6e7a2ab4f974fa8520b63955, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -155,5 +155,5 @@ MonoBehaviour:
   playerLayerMask:
     serializedVersion: 2
     m_Bits: 64
-  timeBeforeColliderOff: 1
-  timeBeforeColliderOn: 5
+  timerOn: 5
+  timerOff: 1
