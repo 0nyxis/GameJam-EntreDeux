@@ -11,9 +11,9 @@ public class SettingsManager : MonoBehaviour
 
     private void Start()
     {
-        sliderMaster.value = AudioManager.instance.mainVolume;
-        sliderSFX.value = AudioManager.instance.sfxVolume;
-        sliderMusic.value = AudioManager.instance.stVolume ;
+        sliderMaster.value = AudioManager.instance.GetMainVolume() ;
+        sliderSFX.value = AudioManager.instance.GetSfxVolume();
+        sliderMusic.value = AudioManager.instance.GetStVolume() ;
     
     }
 
