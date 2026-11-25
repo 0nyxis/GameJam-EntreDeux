@@ -820,11 +820,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 339841563997366029, guid: c45dd24bd348a7949956f40fbd1e8899, type: 3}
       propertyPath: m_CullingMask.m_Bits
-      value: 439
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 1144592474944838914, guid: c45dd24bd348a7949956f40fbd1e8899, type: 3}
       propertyPath: m_CullingMask.m_Bits
-      value: 72
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2497870810731110565, guid: c45dd24bd348a7949956f40fbd1e8899, type: 3}
       propertyPath: m_Name
@@ -7130,6 +7130,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 54809356ae705ac4eb7c16f531aadafc, type: 2}
+    - target: {fileID: 6902058317434576220, guid: 925bb8f2b62f6ee4891d12ad2f6982bc, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 7002590247174619564, guid: 925bb8f2b62f6ee4891d12ad2f6982bc, type: 3}
       propertyPath: m_Name
       value: GameNeeds
