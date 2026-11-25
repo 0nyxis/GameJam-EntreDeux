@@ -1823,11 +1823,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5073442573016129559, guid: c45dd24bd348a7949956f40fbd1e8899, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.9
+      value: 3.5
       objectReference: {fileID: 0}
     - target: {fileID: 5073442573016129559, guid: c45dd24bd348a7949956f40fbd1e8899, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.9
+      value: -1.8
       objectReference: {fileID: 0}
     - target: {fileID: 5073442573016129559, guid: c45dd24bd348a7949956f40fbd1e8899, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1876,7 +1876,7 @@ PrefabInstance:
     - target: {fileID: 7813281094206556877, guid: c45dd24bd348a7949956f40fbd1e8899, type: 3}
       propertyPath: 'm_Cameras.Array.data[0]'
       value: 
-      objectReference: {fileID: 1448827895}
+      objectReference: {fileID: 0}
     - target: {fileID: 7815385743064571876, guid: c45dd24bd348a7949956f40fbd1e8899, type: 3}
       propertyPath: m_Layer
       value: 6
@@ -12272,11 +12272,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 19.2, y: 2.100245}
   m_EdgeRadius: 0
---- !u!20 &1448827895 stripped
-Camera:
-  m_CorrespondingSourceObject: {fileID: 1144592474944838914, guid: c45dd24bd348a7949956f40fbd1e8899, type: 3}
-  m_PrefabInstance: {fileID: 198850255}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1450849237
 GameObject:
   m_ObjectHideFlags: 0
