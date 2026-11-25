@@ -1,10 +1,22 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    #region Variables
+
+    [Header("Datas")]
+    [SerializeField]
+    private List<GameObject> memoriesPrefab;
+
     public static GameManager Instance;
     public static int levelIndex;
+
+    private Player playerPtr;
+    private int nbMemo;
+
+    #endregion
 
     private void Awake()
     {
@@ -22,14 +34,47 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    public void PlayerDead()
+    public void ReloadLastLevel()
     {
-        levelIndex = SceneManager.GetActiveScene().buildIndex;
-        SceneManager.LoadScene("GameOver");
+        ChangeSceneTo(levelIndex);
+    }
+    public void ChangeSceneTo(string _sceneName)
+    {
+        if (playerPtr != null)
+        {
+            nbMemo = playerPtr.GetMemorie().Count;
+        }
+
+        SceneManager.LoadScene(_sceneName);
+    }
+    public void ChangeSceneTo(int _sceneBuildID)
+    {
+        if (playerPtr != null)
+        {
+            nbMemo = playerPtr.GetMemorie().Count;
+        }
+
+        SceneManager.LoadScene(_sceneBuildID);
     }
 
-    public void ReloadLevel()
+    public void RegisterPlayer(Player _player)
     {
-        SceneManager.LoadScene(levelIndex);
+        playerPtr = _player;
+        SpawnMemories();
+    }
+
+    public void SpawnMemories()
+    {
+        if (nbMemo + 5 > 0)
+        {
+            int randomNumber = 0;
+            Vector2 posTemp = playerPtr.transform.position;
+            for (int i = 0; i < nbMemo + 5; i++)
+            {
+                randomNumber = (int)Random.Range(0, memoriesPrefab.Count - 0.01f);
+                Debug.Log("Random : " + randomNumber);
+                Instantiate(memoriesPrefab[randomNumber], (Vector3)posTemp, Quaternion.identity);
+            }
+        }
     }
 }

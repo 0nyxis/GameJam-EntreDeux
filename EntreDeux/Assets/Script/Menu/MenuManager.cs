@@ -26,11 +26,6 @@ public class MenuManager : MonoBehaviour
 
     }
 
-    public void PlayScene(string sceneName)
-    {
-        SceneManager.LoadScene(sceneName);
-    }
-
     //works with any canvas specified below
     public void ToggleCanvas(string name)
     {

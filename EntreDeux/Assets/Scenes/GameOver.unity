@@ -235,7 +235,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1168156409164746822, guid: 8511218aceeed62498c2bec5548504b6, type: 3}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: ReloadLevel
+        m_MethodName: ReloadLastLevel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -706,17 +706,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b03ad53b9fda5a748866e1ededfb403d, type: 3}
---- !u!114 &1940995934 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8813498093177484729, guid: b03ad53b9fda5a748866e1ededfb403d, type: 3}
-  m_PrefabInstance: {fileID: 1940995933}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c8e3c538fb9e724eb98c63ecac258da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MainMenuManager
 --- !u!1001 &3811819540132019850
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -808,7 +797,15 @@ PrefabInstance:
     - target: {fileID: 1184959765807923686, guid: bdceba6c5874c494aa45c15946b5005a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1940995934}
+      objectReference: {fileID: 1168156409164746822, guid: 8511218aceeed62498c2bec5548504b6, type: 3}
+    - target: {fileID: 1184959765807923686, guid: bdceba6c5874c494aa45c15946b5005a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ChangeSceneTo
+      objectReference: {fileID: 0}
+    - target: {fileID: 1184959765807923686, guid: bdceba6c5874c494aa45c15946b5005a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameManager, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 4027376489166174697, guid: bdceba6c5874c494aa45c15946b5005a, type: 3}
       propertyPath: m_Sprite
       value: 

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5802065770086756841}
   - component: {fileID: 2256755910115128124}
   m_Layer: 0
-  m_Name: MemoryCollectible
+  m_Name: MemoryCollectible2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -84,7 +84,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 1690958918252571956, guid: bbded35f93f8393418775130a41030af, type: 3}
+  m_Sprite: {fileID: 815287065009231377, guid: 7d7fe89cdd3dedc45a11d5d75f258548, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

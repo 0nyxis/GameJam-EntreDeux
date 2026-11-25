@@ -28,6 +28,7 @@ public class Interact : MonoBehaviour
         if (leShaderGraph == null)
         {
             leShaderGraph = Resources.Load<Material>("SG_Shockwave");
+            leShaderGraph.SetFloat(ProgressId, 0.99f);
         }
     }
 
@@ -52,7 +53,7 @@ public class Interact : MonoBehaviour
             yield return null;
         }
 
-        leShaderGraph.SetFloat(ProgressId, 1f);
+        leShaderGraph.SetFloat(ProgressId, 0.99f);
         canInteract = true;
     }
 

@@ -77,6 +77,8 @@ public class Player : MonoBehaviour
         ia_Move = InputSystem.actions.FindAction("Move");
         ia_Jump = InputSystem.actions.FindAction("Jump");
         ia_Interact = InputSystem.actions.FindAction("Interact");
+
+        GameManager.Instance.RegisterPlayer(this);
     }
 
     // Update is called once per frame
@@ -88,9 +90,10 @@ public class Player : MonoBehaviour
 
         body.flipX = WasLastMoveRight;
         mask.flipX = WasLastMoveRight;
+
         if (lifePoint <= 0)
         {
-            GameManager.Instance.PlayerDead();
+            GameManager.Instance.ChangeSceneTo("GameOver");
         }
         else
         {

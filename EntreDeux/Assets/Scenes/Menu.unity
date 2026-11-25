@@ -876,14 +876,14 @@ PrefabInstance:
     - target: {fileID: 2924242908634591498, guid: 67aeafa78827a504ca7594110146c7fc, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1829321081}
+      objectReference: {fileID: 1168156409164746822, guid: 8511218aceeed62498c2bec5548504b6, type: 3}
     - target: {fileID: 2924242908634591498, guid: 67aeafa78827a504ca7594110146c7fc, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PlayScene
+      value: ChangeSceneTo
       objectReference: {fileID: 0}
     - target: {fileID: 2924242908634591498, guid: 67aeafa78827a504ca7594110146c7fc, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: MenuManager, Assembly-CSharp
+      value: GameManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2924242908634591498, guid: 67aeafa78827a504ca7594110146c7fc, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument

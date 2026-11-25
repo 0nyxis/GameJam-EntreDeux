@@ -44,3 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3f43f9979b8aee4b8ad36cb2d854932, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
+  memoriesPrefab:
+  - {fileID: 731574087517167141, guid: c87f4ce53a120c84d964fa3f283c8e0b, type: 3}
+  - {fileID: 731574087517167141, guid: 066735d3c8d66024385a6d2dd5d5cbaa, type: 3}
+  - {fileID: 731574087517167141, guid: 8315eac78e595f345be01f7511554d0d, type: 3}

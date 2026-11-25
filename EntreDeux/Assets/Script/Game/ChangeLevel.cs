@@ -1,4 +1,4 @@
-using UnityEngine;
+ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class ChangeLevel : MonoBehaviour
@@ -11,11 +11,11 @@ public class ChangeLevel : MonoBehaviour
 
             if (sceneActuelle == "Level1")
             {
-                SceneManager.LoadScene("Level2");
+                GameManager.Instance.ChangeSceneTo("Level2");
             }
             else if (sceneActuelle == "Level2")
             {
-                SceneManager.LoadScene("Level3");
+                GameManager.Instance.ChangeSceneTo("Level3");
             }
         }
     }
