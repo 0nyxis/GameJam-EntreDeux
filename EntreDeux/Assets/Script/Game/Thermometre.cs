@@ -4,7 +4,7 @@ using UnityEngine.InputSystem;
 public class Thermometre : MonoBehaviour
 {
     [SerializeField] private float speed = 5f;
-    [SerializeField] private float maxWidth = 21.0216f;
+    [SerializeField] private float maxWidth = 21f;
 
     [SerializeField] private SpriteRenderer spriteRendererTermo;
     [SerializeField] private BoxCollider2D colliderTermo;
