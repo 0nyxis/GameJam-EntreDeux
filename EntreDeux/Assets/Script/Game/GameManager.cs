@@ -12,7 +12,6 @@ public class GameManager : MonoBehaviour
 
     public static GameManager Instance;
     public static int levelIndex;
-
     private Player playerPtr;
     private int nbMemo;
 
@@ -42,7 +41,8 @@ public class GameManager : MonoBehaviour
     {
         if (playerPtr != null)
         {
-            nbMemo = playerPtr.GetMemorie().Count;
+            nbMemo = playerPtr.GetComponent<MemoryCarrier>().Memories.Count;
+            Debug.Log(nbMemo);
         }
 
         SceneManager.LoadScene(_sceneName);
@@ -51,7 +51,7 @@ public class GameManager : MonoBehaviour
     {
         if (playerPtr != null)
         {
-            nbMemo = playerPtr.GetMemorie().Count;
+            nbMemo = playerPtr.GetComponent<MemoryCarrier>().Memories.Count;
         }
 
         SceneManager.LoadScene(_sceneBuildID);
@@ -59,6 +59,7 @@ public class GameManager : MonoBehaviour
 
     public void RegisterPlayer(Player _player)
     {
+        Debug.Log("Player enregistré !");
         playerPtr = _player;
         levelIndex = SceneManager.GetActiveScene().buildIndex;
         SpawnMemories();
@@ -66,6 +67,7 @@ public class GameManager : MonoBehaviour
 
     public void SpawnMemories()
     {
+        Debug.Log(nbMemo);
         if (nbMemo > 0)
         {
             int randomNumber = 0;

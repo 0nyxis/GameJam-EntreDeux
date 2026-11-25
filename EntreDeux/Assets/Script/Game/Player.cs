@@ -56,7 +56,7 @@ public class Player : MonoBehaviour
     InputAction ia_Interact;
     public static event Action OnJumpPressed;
 
-
+    [SerializeField] float MaximumIntensity = 6f;
     private Rigidbody2D rb;
     private Interact interactScript;
     private Light2D light2D;
@@ -97,11 +97,10 @@ public class Player : MonoBehaviour
         }
         else
         {
-            float MinimumIntensity = 6f;
             float MinimumOuterRadius = 6f;
 
             lifePoint -= Time.fixedDeltaTime * lifeLossMultiplier;
-            light2D.intensity = (float)((MinimumIntensity / 100f) * (float)lifePoint);
+            light2D.intensity = (float)((MaximumIntensity / 100f) * (float)lifePoint);
             light2D.pointLightOuterRadius = MinimumOuterRadius + ((3f / 10f) * ((float)lifePoint / 10f));
         }
 
@@ -287,9 +286,9 @@ public class Player : MonoBehaviour
     {
         memories.Add(_a);
     }
-    public List<MemoryCollectibleBehavior> GetMemorie()
+    public int GetNbMemorie()
     {
-        return memories;
+        return memories.Count;
     }
     public void TakeDamage(int _damage)
     {
