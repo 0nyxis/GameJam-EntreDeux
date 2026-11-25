@@ -1,5 +1,7 @@
+using System;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
@@ -8,6 +10,15 @@ public class MenuManager : MonoBehaviour
     public CreditsManager creditsManager;
     [HideInInspector]
     public SettingsManager settingsManager;
+    [HideInInspector]
+    public IngameMenuManager ingameMenuManager;
+
+    public bool canPauseGame = false;
+
+    private bool crdtupd;
+    private bool sttupdg;
+    private bool igmupd;
+    InputAction pauseAction;
 
     private void Start()
     {
@@ -17,11 +28,36 @@ public class MenuManager : MonoBehaviour
         {
             creditsManager = gameObject.GetComponent<CreditsManager>();
             creditsManager.canvas.enabled = false;
+            crdtupd = true;
+        }
+        else
+        {
+            crdtupd = false;
         }
         if (!gameObject.GetComponent<SettingsManager>().IsUnityNull())
         {
             settingsManager = gameObject.GetComponent<SettingsManager>();
             settingsManager.canvas.enabled = false;
+            sttupdg = true;
+        }
+        else
+        {
+            sttupdg = false;
+        }
+        if (!gameObject.GetComponent<IngameMenuManager>().IsUnityNull())
+        {
+            ingameMenuManager = gameObject.GetComponent<IngameMenuManager>();
+            ingameMenuManager.canvas.enabled = false;
+            igmupd = true;
+        }
+        else
+        {
+            igmupd = false;
+        }
+
+        if (canPauseGame)
+        {
+            pauseAction = InputSystem.actions.FindAction("Player/Pause");
         }
 
     }
@@ -29,17 +65,53 @@ public class MenuManager : MonoBehaviour
     //works with any canvas specified below
     public void ToggleCanvas(string name)
     {
-        if (creditsManager.GetType().ToString().Remove(creditsManager.GetType().ToString().IndexOf('M')).Contains(name))
+        if (crdtupd)
         {
-            creditsManager.canvas.enabled = !creditsManager.canvas.enabled;
+            if (creditsManager.GetType().ToString().Remove(creditsManager.GetType().ToString().IndexOf('M')).Contains(name))
+            {
+                creditsManager.canvas.enabled = !creditsManager.canvas.enabled;
+            }
         }
-        else if (settingsManager.GetType().ToString().Remove(settingsManager.GetType().ToString().IndexOf('M')).Contains(name))
+        if (sttupdg)
         {
-            settingsManager.canvas.enabled = !settingsManager.canvas.enabled;
+            if (settingsManager.GetType().ToString().Remove(settingsManager.GetType().ToString().IndexOf('M')).Contains(name))
+            {
+                settingsManager.canvas.enabled = !settingsManager.canvas.enabled;
+            }
         }
-
-
+        if (igmupd)
+        {
+            if (ingameMenuManager.GetType().ToString().Remove(ingameMenuManager.GetType().ToString().IndexOf('M')).Contains(name))
+            {
+                ingameMenuManager.canvas.enabled = !ingameMenuManager.canvas.enabled;
+            }
+        }
     }
+
+    private void Update()
+    {
+        if (canPauseGame)
+        {
+            if (pauseAction.WasCompletedThisFrame())
+            {
+                PauseGame();
+            }
+        }
+    }
+
+    private void PauseGame()
+    {
+        ToggleCanvas("Ingame");
+        if (Time.timeScale > 0)
+        {
+            Time.timeScale = 0;
+        }
+        else
+        {
+            Time.timeScale = 1;
+        }
+    }
+
     public void QuitGame()
     {
         Application.Quit();

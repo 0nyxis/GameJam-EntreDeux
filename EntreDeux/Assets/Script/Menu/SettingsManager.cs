@@ -9,6 +9,13 @@ public class SettingsManager : MonoBehaviour
     public Slider sliderSFX;
     public Slider sliderMusic;
 
+    private void Start()
+    {
+        sliderMaster.value = AudioManager.instance.mainVolume;
+        sliderSFX.value = AudioManager.instance.sfxVolume;
+        sliderMusic.value = AudioManager.instance.stVolume ;
+    
+    }
 
     private void Update()
     {
