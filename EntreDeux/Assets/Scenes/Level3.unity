@@ -1061,9 +1061,10 @@ PrefabInstance:
     - target: {fileID: 7813281094206556877, guid: c45dd24bd348a7949956f40fbd1e8899, type: 3}
       propertyPath: 'm_Cameras.Array.data[0]'
       value: 
-      objectReference: {fileID: 1255304023}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 818179775616900264, guid: c45dd24bd348a7949956f40fbd1e8899, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c45dd24bd348a7949956f40fbd1e8899, type: 3}
@@ -8763,11 +8764,6 @@ SpriteRenderer:
 Transform:
   m_CorrespondingSourceObject: {fileID: 2379285803682388391, guid: 8d409f3c1fd41534f91e25fe1126fb5f, type: 3}
   m_PrefabInstance: {fileID: 1253871334}
-  m_PrefabAsset: {fileID: 0}
---- !u!20 &1255304023 stripped
-Camera:
-  m_CorrespondingSourceObject: {fileID: 1144592474944838914, guid: c45dd24bd348a7949956f40fbd1e8899, type: 3}
-  m_PrefabInstance: {fileID: 170263649}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1259853467
 GameObject:
