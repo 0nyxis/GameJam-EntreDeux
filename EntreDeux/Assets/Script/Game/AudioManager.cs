@@ -32,10 +32,19 @@ public class AudioManager : MonoBehaviour
     //    }
     //}
 
-    public float mainVolume = 1.0f;
-    public float stVolume = 1.0f;
-    public float sfxVolume = 1.0f;
-    public float clockTimer = 1.0f;
+    [Serializable]
+    private struct AudioInfo
+    {
+        public AudioResource resource;
+        public float lastPlayed;
+    }
+
+    [SerializeField] float mainVolume = 1.0f;
+    [SerializeField] float stVolume = 1.0f;
+    [SerializeField] float sfxVolume = 1.0f;
+    [SerializeField] float clockTimer = 1.0f;
+    [SerializeField] float timeBetweenSFX = 0.1f;
+    [SerializeField] float delta = 0.0f;
 
     [SerializeField] GameObject soundtrackObject;
     [SerializeField] GameObject sfxObject;
@@ -43,7 +52,8 @@ public class AudioManager : MonoBehaviour
     [SerializeField] AudioSource soundtrackAudioSource;
     [SerializeField] List<AudioSource> sfxAudioSources;
     [SerializeField] List<AudioClip> soundtrackClips;
-    [SerializeField] Dictionary<string, AudioResource> soundEffects;
+    [SerializeField] Dictionary<string, AudioInfo> soundEffects;
+    private AudioSource aSource;
 
     void Awake()
     {
@@ -70,13 +80,20 @@ public class AudioManager : MonoBehaviour
 
         ChangeScene(scene, scene);
 
-        foreach(KeyValuePair<string, AudioResource> ressource in soundEffects)
+        for (int x = 0; x < 16; x++)
         {
             AudioSource source = sfxObject.AddComponent<AudioSource>();
-            sfxAudioSources.Add(source);
-            source.resource = ressource.Value;
             source.volume = 0.5f * mainVolume * sfxVolume;
+            sfxAudioSources.Add(source);
         }
+
+        //foreach (KeyValuePair<string, AudioResource> ressource in soundEffects)
+        //{
+        //    AudioSource source = sfxObject.AddComponent<AudioSource>();
+        //    sfxAudioSources.Add(source);
+        //    source.resource = ressource.Value;
+        //    source.volume = 0.5f * mainVolume * sfxVolume;
+        //}
 
         SceneManager.activeSceneChanged += ChangeScene;
     }
@@ -149,28 +166,55 @@ public class AudioManager : MonoBehaviour
 
         if (soundEffects.ContainsKey(sound))
         {
-            //TODO If enough time use the PlayOneShot() or the static function PlayAsPoint or something (forgot the name)
-            bool hasSound = false;
+            ////TODO If enough time use the PlayOneShot() or the static function PlayAsPoint or something (forgot the name)
+            //bool hasSound = false;
 
-            foreach(AudioSource audio in sfxAudioSources)
+            //foreach(AudioSource audio in sfxAudioSources)
+            //{
+            //    if (audio.resource == soundEffects[sound].resource)
+            //    {
+            //        audio.volume = 0.5f * mainVolume * sfxVolume;
+            //        audio.Play();
+            //        hasSound = true;
+            //    }
+            //}
+
+            //if (!hasSound)
+            //{
+            //    AudioSource source = sfxObject.AddComponent<AudioSource>();
+            //    sfxAudioSources.Add(source);
+            //    source.resource = soundEffects[sound].resource;
+            //    source.volume = 0.5f * mainVolume * sfxVolume;
+            //    source.Play();
+            //}
+
+            if (Time.time - soundEffects[sound].lastPlayed < timeBetweenSFX)
             {
-                if (audio.resource == soundEffects[sound])
-                {
-                    audio.volume = 0.5f * mainVolume * sfxVolume;
-                    audio.Play();
-                    hasSound = true;
-                }
+                return;
             }
 
-            if (!hasSound)
+            AudioInfo info = soundEffects[sound];
+            info.lastPlayed = Time.time;
+            soundEffects[sound] = info;
+
+            aSource = GetFreeGameSFXAudioSource();
+            aSource.resource = soundEffects[sound].resource;
+            aSource.Play();
+        }
+    }
+
+    private AudioSource GetFreeGameSFXAudioSource()
+    {
+        foreach (AudioSource source in sfxAudioSources)
+        {
+            if (!source.isPlaying)
             {
-                AudioSource source = sfxObject.AddComponent<AudioSource>();
-                sfxAudioSources.Add(source);
-                source.resource = soundEffects[sound];
-                source.volume = 0.5f * mainVolume * sfxVolume;
-                source.Play();
+                return source;
             }
         }
+
+        sfxAudioSources.Add(gameObject.AddComponent<AudioSource>());
+        return sfxAudioSources[^1];
     }
 
     public void SetMainVolume(float volume)
@@ -194,6 +238,19 @@ public class AudioManager : MonoBehaviour
         UpdateVolume();
     }
 
+    public float GetMainVolume()
+    {
+        return mainVolume;
+    }
+    public float GetStVolume()
+    {
+        return stVolume;
+    }
+    public float GetSfxVolume()
+    {
+        return sfxVolume;
+    }
+
     public void UpdateVolume()
     {
         soundtrackAudioSource.volume = 0.5f * mainVolume * stVolume;
@@ -212,27 +269,32 @@ public class AudioManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //delta += Time.deltaTime;
+        if (sfxObject == null)
+        {
+            return;
+        }
 
-        //if (delta >= clockTimer)
-        //{
-        //    delta = 0.0f;
-        //}
-        //else
-        //{
-        //    return;
-        //}
+        delta += Time.deltaTime;
 
-        //if (sfxObject != null)
-        //{
-        //    for (int i = sfxAudioSources.Count - 1; i >= 0; i--)
-        //    {
-        //        if (!sfxAudioSources[i].isPlaying)
-        //        {
-        //            Destroy(sfxAudioSources[i]);
-        //            sfxAudioSources.RemoveAt(i);
-        //        }
-        //    }
-        //}
+        if (delta >= clockTimer)
+        {
+            delta = 0.0f;
+        }
+        else
+        {
+            return;
+        }
+
+        if (sfxAudioSources.Count > 16)
+        {
+            for (int i = sfxAudioSources.Count - 1; i >= 0; i--)
+            {
+                if (!sfxAudioSources[i].isPlaying && sfxAudioSources.Count > 16)
+                {
+                    Destroy(sfxAudioSources[i]);
+                    sfxAudioSources.RemoveAt(i);
+                }
+            }
+        }
     }
 }
