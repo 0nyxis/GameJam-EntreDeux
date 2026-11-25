@@ -25,6 +25,8 @@ public class LevelParallax : MonoBehaviour
         public Transform parent;
 
         private Transform tMiddle, tLeft, tRight, tUp, tDown;
+        private Transform tUpLeft, tUpRight, tDownLeft, tDownRight;
+
         private readonly float speed;
         private readonly bool wrapX, wrapY;
         private readonly Vector2 startOffset;
@@ -60,6 +62,13 @@ public class LevelParallax : MonoBehaviour
                 tUp = CreateTile(data.sprite, layerOrder);
                 tDown = CreateTile(data.sprite, layerOrder);
             }
+            if (wrapX && wrapY)
+            {
+                tUpLeft = CreateTile(data.sprite, layerOrder);
+                tUpRight = CreateTile(data.sprite, layerOrder);
+                tDownLeft = CreateTile(data.sprite, layerOrder);
+                tDownRight = CreateTile(data.sprite, layerOrder);
+            }
 
             PlaceTiles();
         }
@@ -77,6 +86,7 @@ public class LevelParallax : MonoBehaviour
         private void PlaceTiles()
         {
             tMiddle.localPosition = origin;
+
             if (wrapX)
             {
                 tLeft.localPosition = origin + new Vector2(-size.x, 0);
@@ -86,6 +96,13 @@ public class LevelParallax : MonoBehaviour
             {
                 tDown.localPosition = origin + new Vector2(0, -size.y);
                 tUp.localPosition = origin + new Vector2(0, size.y);
+            }
+            if (wrapX && wrapY)
+            {
+                tUpLeft.localPosition = origin + new Vector2(-size.x, size.y);
+                tUpRight.localPosition = origin + new Vector2(size.x, size.y);
+                tDownLeft.localPosition = origin + new Vector2(-size.x, -size.y);
+                tDownRight.localPosition = origin + new Vector2(size.x, -size.y);
             }
         }
 
