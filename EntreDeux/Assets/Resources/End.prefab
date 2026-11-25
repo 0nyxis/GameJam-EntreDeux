@@ -139,7 +139,19 @@ MonoBehaviour:
   consumeMemories: 0
   onActivated:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5854479412742280500}
+        m_TargetAssemblyTypeName: EndDoor, Assembly-CSharp
+        m_MethodName: ActiveEndDoor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onDeactivated:
     m_PersistentCalls:
       m_Calls: []
@@ -611,3 +623,14 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8856314335031066657, guid: e03223ec34c75fb4882769081993db97, type: 3}
   m_PrefabInstance: {fileID: 5265782430046902669}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &5854479412742280500 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1741937826781924537, guid: e03223ec34c75fb4882769081993db97, type: 3}
+  m_PrefabInstance: {fileID: 5265782430046902669}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 643e9b4d5aec47a458043585503cb7c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'

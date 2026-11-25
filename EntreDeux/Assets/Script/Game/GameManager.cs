@@ -65,11 +65,11 @@ public class GameManager : MonoBehaviour
 
     public void SpawnMemories()
     {
-        if (nbMemo + 5 > 0)
+        if (nbMemo > 0)
         {
             int randomNumber = 0;
             Vector2 posTemp = playerPtr.transform.position;
-            for (int i = 0; i < nbMemo + 5; i++)
+            for (int i = 0; i < nbMemo; i++)
             {
                 randomNumber = (int)Random.Range(0, memoriesPrefab.Count - 0.01f);
                 Debug.Log("Random : " + randomNumber);
