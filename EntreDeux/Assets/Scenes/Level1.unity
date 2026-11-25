@@ -1740,7 +1740,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 339841563997366029, guid: c45dd24bd348a7949956f40fbd1e8899, type: 3}
       propertyPath: m_CullingMask.m_Bits
-      value: 951
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 602039491627638005, guid: c45dd24bd348a7949956f40fbd1e8899, type: 3}
       propertyPath: m_Layer
@@ -1748,7 +1748,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1144592474944838914, guid: c45dd24bd348a7949956f40fbd1e8899, type: 3}
       propertyPath: m_CullingMask.m_Bits
-      value: 72
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2497870810731110565, guid: c45dd24bd348a7949956f40fbd1e8899, type: 3}
       propertyPath: m_Name
@@ -1768,6 +1768,14 @@ PrefabInstance:
       objectReference: {fileID: -3907851502439543207, guid: 8675919c7d382944d90e28a3229bbc7f, type: 3}
     - target: {fileID: 2549893170120405589, guid: c45dd24bd348a7949956f40fbd1e8899, type: 3}
       propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3118665339633761622, guid: c45dd24bd348a7949956f40fbd1e8899, type: 3}
+      propertyPath: m_BlendStyleIndex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3118665339633761622, guid: c45dd24bd348a7949956f40fbd1e8899, type: 3}
+      propertyPath: m_ApplyToSortingLayers.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4537234916036492312, guid: c45dd24bd348a7949956f40fbd1e8899, type: 3}
@@ -19427,7 +19435,7 @@ PrefabInstance:
     - target: {fileID: 1641853933884224975, guid: 925bb8f2b62f6ee4891d12ad2f6982bc, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 54809356ae705ac4eb7c16f531aadafc, type: 2}
+      objectReference: {fileID: 2100000, guid: f37c5f0096dc805458e18c0eb93ca728, type: 2}
     - target: {fileID: 3557423238461562531, guid: 925bb8f2b62f6ee4891d12ad2f6982bc, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.9976245
@@ -19458,7 +19466,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6902058317434576220, guid: 925bb8f2b62f6ee4891d12ad2f6982bc, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7002590247174619564, guid: 925bb8f2b62f6ee4891d12ad2f6982bc, type: 3}
       propertyPath: m_Name
