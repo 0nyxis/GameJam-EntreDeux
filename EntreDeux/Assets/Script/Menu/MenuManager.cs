@@ -58,6 +58,10 @@ public class MenuManager : MonoBehaviour
         if (canPauseGame)
         {
             pauseAction = InputSystem.actions.FindAction("Player/Pause");
+            if (Time.timeScale == 0)
+            {
+                Time.timeScale = 1;
+            }
         }
 
     }

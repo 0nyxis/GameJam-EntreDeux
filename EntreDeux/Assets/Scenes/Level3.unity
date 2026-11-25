@@ -3147,17 +3147,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2058352252282473252, guid: ecea0b759a5c129468c814ac14b13615, type: 3}
   m_PrefabInstance: {fileID: 557668433}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &561503413 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1168156409164746822, guid: 8511218aceeed62498c2bec5548504b6, type: 3}
-  m_PrefabInstance: {fileID: 1986751067}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3f43f9979b8aee4b8ad36cb2d854932, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GameManager
 --- !u!1001 &578774487
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12943,7 +12932,7 @@ PrefabInstance:
     - target: {fileID: 2196883925067262685, guid: 023a2a7bafe019449b35dea95d274da1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 561503413}
+      objectReference: {fileID: 1168156409164746822, guid: 8511218aceeed62498c2bec5548504b6, type: 3}
     - target: {fileID: 2196883925067262685, guid: 023a2a7bafe019449b35dea95d274da1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
