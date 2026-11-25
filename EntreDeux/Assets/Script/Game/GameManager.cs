@@ -60,6 +60,7 @@ public class GameManager : MonoBehaviour
     public void RegisterPlayer(Player _player)
     {
         playerPtr = _player;
+        levelIndex = SceneManager.GetActiveScene().buildIndex;
         SpawnMemories();
     }
 
