@@ -1905,11 +1905,6 @@ SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 5210849190150363774, guid: 49cb7148762b15b468eaaf637c9ff577, type: 3}
   m_PrefabInstance: {fileID: 170077922}
   m_PrefabAsset: {fileID: 0}
---- !u!20 &171366408 stripped
-Camera:
-  m_CorrespondingSourceObject: {fileID: 1144592474944838914, guid: c45dd24bd348a7949956f40fbd1e8899, type: 3}
-  m_PrefabInstance: {fileID: 1522696664}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &175847638
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17814,7 +17809,7 @@ PrefabInstance:
     - target: {fileID: 7813281094206556877, guid: c45dd24bd348a7949956f40fbd1e8899, type: 3}
       propertyPath: 'm_Cameras.Array.data[0]'
       value: 
-      objectReference: {fileID: 171366408}
+      objectReference: {fileID: 0}
     - target: {fileID: 7815385743064571876, guid: c45dd24bd348a7949956f40fbd1e8899, type: 3}
       propertyPath: m_Layer
       value: 6
